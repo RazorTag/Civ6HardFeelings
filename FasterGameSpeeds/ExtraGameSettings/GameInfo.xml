@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameInfo -->
+<!-- Author: enors -->
+<!-- DateCreated: 10/24/2017 4:27:04 AM -->
+<GameInfo>
+	<!-- faster game speeds -->
+	<GameSpeeds>
+		<Row GameSpeedType="GAMESPEED_FAST" Name="LOC_GAMESPEED_FAST_NAME" Description="LOC_GAMESPEED_FAST_HELP" SortIndex="8" />
+	</GameSpeeds>
+	
+	<GameSpeeds>
+		<Row GameSpeedType="GAMESPEED_CASUAL" Name="LOC_GAMESPEED_CASUAL_NAME" Description="LOC_GAMESPEED_CASUAL_HELP" SortIndex="6" />
+	</GameSpeeds>
+
+	<GameSpeeds>
+		<Row GameSpeedType="GAMESPEED_BLAZING" Name="LOC_GAMESPEED_BLAZING_NAME" Description="LOC_GAMESPEED_BLAZING_HELP" SortIndex="4" />
+	</GameSpeeds>
+
+	<GameSpeeds>
+		<Row GameSpeedType="GAMESPEED_ADHD" Name="LOC_GAMESPEED_ADHD_NAME" Description="LOC_GAMESPEED_ADHD_HELP" SortIndex="2" />
+	</GameSpeeds>
+
+	<!-- slower game speeds -->
+	<!--<GameSpeeds>
+		<Row GameSpeedType="GAMESPEED_EPOCH" Name="LOC_GAMESPEED_EPOCH_NAME" Description="LOC_GAMESPEED_EPOCH_HELP" SortIndex="60" />
+	</GameSpeeds>
+
+	<GameSpeeds>
+		<Row GameSpeedType="GAMESPEED_ERA" Name="LOC_GAMESPEED_ERA_NAME" Description="LOC_GAMESPEED_ERA_HELP" SortIndex="70" />
+	</GameSpeeds>-->
+</GameInfo>

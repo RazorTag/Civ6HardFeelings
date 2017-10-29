@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameSpeeds -->
+<!-- Author: enors -->
+<!-- DateCreated: 10/24/2017 3:55:23 AM -->
+<GameData>
+	<Types>
+		<!-- faster game speeds -->
+		<Row Type="GAMESPEED_FAST" Kind="KIND_GAMESPEED"/>
+		<Row Type="GAMESPEED_CASUAL" Kind="KIND_GAMESPEED"/>
+		<Row Type="GAMESPEED_BLAZING" Kind="KIND_GAMESPEED"/>
+		<Row Type="GAMESPEED_ADHD" Kind="KIND_GAMESPEED"/>
+
+		<!-- slower game speeds -->
+		<!--<Row Type="GAMESPEED_EPOCH" Kind="KIND_GAMESPEED"/>
+		<Row Type="GAMESPEED_ERA" Kind="KIND_GAMESPEED"/>-->
+	</Types>
+	
+	<!-- Sets the scaling factors for game progression -->
+	<GameSpeeds>
+		<!-- faster game speeds -->
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<Name>LOC_GAMESPEED_FAST_NAME</Name>
+			<Description>LOC_GAMESPEED_FAST_HELP</Description>
+			<CostMultiplier>40</CostMultiplier>
+			<CivicUnlockMaxCost>40</CivicUnlockMaxCost>
+			<CivicUnlockPerTurnDrop>4</CivicUnlockPerTurnDrop>
+			<CivicUnlockMinCost>8</CivicUnlockMinCost>
+		</Row>
+
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<Name>LOC_GAMESPEED_CASUAL_NAME</Name>
+			<Description>LOC_GAMESPEED_CASUAL_HELP</Description>
+			<CostMultiplier>30</CostMultiplier>
+			<CivicUnlockMaxCost>30</CivicUnlockMaxCost>
+			<CivicUnlockPerTurnDrop>3</CivicUnlockPerTurnDrop>
+			<CivicUnlockMinCost>6</CivicUnlockMinCost>
+		</Row>
+
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<Name>LOC_GAMESPEED_BLAZING_NAME</Name>
+			<Description>LOC_GAMESPEED_BLAZING_HELP</Description>
+			<CostMultiplier>20</CostMultiplier>
+			<CivicUnlockMaxCost>20</CivicUnlockMaxCost>
+			<CivicUnlockPerTurnDrop>2</CivicUnlockPerTurnDrop>
+			<CivicUnlockMinCost>4</CivicUnlockMinCost>
+		</Row>
+
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<Name>LOC_GAMESPEED_ADHD_NAME</Name>
+			<Description>LOC_GAMESPEED_ADHD_HELP</Description>
+			<CostMultiplier>10</CostMultiplier>
+			<CivicUnlockMaxCost>10</CivicUnlockMaxCost>
+			<CivicUnlockPerTurnDrop>1</CivicUnlockPerTurnDrop>
+			<CivicUnlockMinCost>2</CivicUnlockMinCost>
+		</Row>
+
+		<!-- slower game speeds --> <!-- speeds slower than marathon cause a crash right after loading into a game and I do not know why -->
+		<!--<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<Name>LOC_GAMESPEED_EPOCH_NAME</Name>
+			<Description>LOC_GAMESPEED_EPOCH_HELP</Description>
+			<CostMultiplier>500</CostMultiplier>
+			<CivicUnlockMaxCost>500</CivicUnlockMaxCost>
+			<CivicUnlockPerTurnDrop>50</CivicUnlockPerTurnDrop>
+			<CivicUnlockMinCost>100</CivicUnlockMinCost>
+		</Row>
+
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<Name>LOC_GAMESPEED_ERA_NAME</Name>
+			<Description>LOC_GAMESPEED_ERA_HELP</Description>
+			<CostMultiplier>1000</CostMultiplier>
+			<CivicUnlockMaxCost>1000</CivicUnlockMaxCost>
+			<CivicUnlockPerTurnDrop>100</CivicUnlockPerTurnDrop>
+			<CivicUnlockMinCost>200</CivicUnlockMinCost>
+		</Row>-->
+	</GameSpeeds>
+	
+	<!-- Determines how fast the world date progresses for each game speed. -->
+	<GameSpeed_Turns>
+	<!-- faster game speeds -->
+		<!-- Fast -->
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<MonthIncrement>1200</MonthIncrement>
+			<TurnsPerIncrement>28</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<MonthIncrement>750</MonthIncrement>
+			<TurnsPerIncrement>24</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<MonthIncrement>600</MonthIncrement>
+			<TurnsPerIncrement>16</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<MonthIncrement>300</MonthIncrement>
+			<TurnsPerIncrement>16</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<MonthIncrement>150</MonthIncrement>
+			<TurnsPerIncrement>24</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<MonthIncrement>60</MonthIncrement>
+			<TurnsPerIncrement>20</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<MonthIncrement>30</MonthIncrement>
+			<TurnsPerIncrement>48</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_FAST</GameSpeedType>
+			<MonthIncrement>15</MonthIncrement>
+			<TurnsPerIncrement>24</TurnsPerIncrement>
+		</Row>
+		
+		<!-- Casual -->
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<MonthIncrement>1600</MonthIncrement>
+			<TurnsPerIncrement>21</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<MonthIncrement>1000</MonthIncrement>
+			<TurnsPerIncrement>18</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<MonthIncrement>800</MonthIncrement>
+			<TurnsPerIncrement>12</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<MonthIncrement>400</MonthIncrement>
+			<TurnsPerIncrement>12</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<MonthIncrement>200</MonthIncrement>
+			<TurnsPerIncrement>18</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<MonthIncrement>80</MonthIncrement>
+			<TurnsPerIncrement>15</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<MonthIncrement>40</MonthIncrement>
+			<TurnsPerIncrement>36</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_CASUAL</GameSpeedType>
+			<MonthIncrement>20</MonthIncrement>
+			<TurnsPerIncrement>18</TurnsPerIncrement>
+		</Row>
+
+		<!-- Blazing -->
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<MonthIncrement>2400</MonthIncrement>
+			<TurnsPerIncrement>14</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<MonthIncrement>1500</MonthIncrement>
+			<TurnsPerIncrement>12</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<MonthIncrement>1200</MonthIncrement>
+			<TurnsPerIncrement>8</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<MonthIncrement>600</MonthIncrement>
+			<TurnsPerIncrement>8</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<MonthIncrement>300</MonthIncrement>
+			<TurnsPerIncrement>12</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<MonthIncrement>120</MonthIncrement>
+			<TurnsPerIncrement>10</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<MonthIncrement>60</MonthIncrement>
+			<TurnsPerIncrement>24</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_BLAZING</GameSpeedType>
+			<MonthIncrement>30</MonthIncrement>
+			<TurnsPerIncrement>12</TurnsPerIncrement>
+		</Row>
+
+		<!-- ADHD -->
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<MonthIncrement>4800</MonthIncrement>
+			<TurnsPerIncrement>7</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<MonthIncrement>3000</MonthIncrement>
+			<TurnsPerIncrement>6</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<MonthIncrement>2400</MonthIncrement>
+			<TurnsPerIncrement>4</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<MonthIncrement>1200</MonthIncrement>
+			<TurnsPerIncrement>4</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<MonthIncrement>600</MonthIncrement>
+			<TurnsPerIncrement>6</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<MonthIncrement>240</MonthIncrement>
+			<TurnsPerIncrement>5</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<MonthIncrement>120</MonthIncrement>
+			<TurnsPerIncrement>12</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ADHD</GameSpeedType>
+			<MonthIncrement>60</MonthIncrement>
+			<TurnsPerIncrement>6</TurnsPerIncrement>
+		</Row>
+
+	<!-- slower game speeds -->
+		<!-- Epoch -->
+		<!--<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<MonthIncrement>192</MonthIncrement>
+			<TurnsPerIncrement>175</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<MonthIncrement>120</MonthIncrement>
+			<TurnsPerIncrement>150</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<MonthIncrement>96</MonthIncrement>
+			<TurnsPerIncrement>100</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<MonthIncrement>48</MonthIncrement>
+			<TurnsPerIncrement>100</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<MonthIncrement>24</MonthIncrement>
+			<TurnsPerIncrement>150</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<MonthIncrement>10</MonthIncrement>
+			<TurnsPerIncrement>125</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<MonthIncrement>5</MonthIncrement>
+			<TurnsPerIncrement>300</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_EPOCH</GameSpeedType>
+			<MonthIncrement>2</MonthIncrement>
+			<TurnsPerIncrement>150</TurnsPerIncrement>
+		</Row>
+		
+		--><!-- Era --><!--
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<MonthIncrement>96</MonthIncrement>
+			<TurnsPerIncrement>350</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<MonthIncrement>60</MonthIncrement>
+			<TurnsPerIncrement>300</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<MonthIncrement>48</MonthIncrement>
+			<TurnsPerIncrement>200</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<MonthIncrement>24</MonthIncrement>
+			<TurnsPerIncrement>200</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<MonthIncrement>12</MonthIncrement>
+			<TurnsPerIncrement>300</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<MonthIncrement>5</MonthIncrement>
+			<TurnsPerIncrement>250</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<MonthIncrement>2</MonthIncrement>
+			<TurnsPerIncrement>600</TurnsPerIncrement>
+		</Row>
+		<Row>
+			<GameSpeedType>GAMESPEED_ERA</GameSpeedType>
+			<MonthIncrement>2</MonthIncrement>
+			<TurnsPerIncrement>300</TurnsPerIncrement>
+		</Row>-->
+	</GameSpeed_Turns>
+</GameData>

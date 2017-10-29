@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>HF: Civilization Balance</Name>
+    <Guid>4eaf5625-ad37-497f-ac55-2a65a15638b3</Guid>
+    <ProjectGuid>4022d05a-7919-4515-8e9d-927544642204</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Balances some of the unique units, leader abilities, and civilization abilities.</Teaser>
+    <Description>Balances some of the unique units, leader abilities, and civilization abilities.</Description>
+    <Authors>Evan Norsworthy</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>CivilizationBalance</AssemblyName>
+    <RootNamespace>CivilizationBalance</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.sql</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>Civilizations.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.sql</File></UpdateText></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Civilizations.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameText.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Units.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

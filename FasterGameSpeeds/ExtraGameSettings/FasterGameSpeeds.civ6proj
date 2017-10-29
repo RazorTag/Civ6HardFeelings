@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>HF: Faster Game Speeds</Name>
+    <Guid>f6534777-c52e-4537-b508-52f66565ffa2</Guid>
+    <ProjectGuid>87d6210d-9a2e-44d9-880a-5eaba0f7a3ca</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Faster game speeds.</Teaser>
+    <Description>Adds options for game speeds faster than the online game speed.</Description>
+    <Authors>Evan Norsworthy</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>ExtraGameSettings</AssemblyName>
+    <RootNamespace>ExtraGameSettings</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Options"><File>GameInfo.xml</File></UpdateDatabase><UpdateText id="Text"><File>GameText.xml</File></UpdateText><UpdateArt id="ModArt"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="GameData"><File>GameData.xml</File></UpdateDatabase><UpdateText id="Text"><File>GameText.xml</File></UpdateText><UpdateArt id="ModArt"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameInfo.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameData.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
