@@ -7,7 +7,7 @@
     <ProjectGuid>4259ae86-4e32-4f4e-8808-ac84adf04ae8</ProjectGuid>
     <ModVersion>2</ModVersion>
     <Teaser>Makes war more difficult.</Teaser>
-    <Description>-Great people can be killed by combat units.[NEWLINE]-Removes passive AOE auras from great people. Great generals and great admirals do not provide combat or movement bonuses. Also removes Abu Al-Qasim Al-Zahrawi's AOE healing.[NEWLINE]-The battering ram and siege tower have 1 movement.[NEWLINE]-The palace in the capital provides 20 extra melee strength and 100 hitpoints of fortification.[NEWLINE]-Halves the production costs of Ancient Walls, Medieval Walls, and Renaissance Walls.[NEWLINE]-Ancient Walls receive 10 fortification strength and 100 hitpoints.[NEWLINE]-Medieval Walls and Renaissance Walls receive 5 fortification strength.[NEWLINE]-Non-combat religious units retreat when captured.</Description>
+    <Description>-Great people can be killed by combat units.[NEWLINE]-Removes passive AOE auras from great people. Great generals and great admirals do not provide combat or movement bonuses. Also removes Abu Al-Qasim Al-Zahrawi's AOE healing.[NEWLINE]-The battering ram and siege tower have 1 movement.[NEWLINE]-The palace in the capital provides 20 extra melee strength and 100 hitpoints of fortification.[NEWLINE]-Halves the production costs of Ancient Walls, Medieval Walls, and Renaissance Walls.[NEWLINE]-Ancient Walls, Medieval Walls, and Renaissance Walls each receive 5 fortification strength instead of 2.[NEWLINE]-Ancient Walls receive 100 hitpoints instead of 50 hitpoints.</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>

@@ -4,7 +4,7 @@
 --------------------------------------------------------------
 --Make ancient walls cheaper, buyable, and stronger
 UPDATE Buildings
-SET PurchaseYield = 'YIELD_GOLD', OuterDefenseStrength = '5', OuterDefenseHitpoints = '100'
+SET Cost = Cost/2, PurchaseYield = 'YIELD_GOLD', OuterDefenseStrength = '5', OuterDefenseHitpoints = '100'
 WHERE	BuildingType = 'BUILDING_WALLS';
 
 --Make Medieval walls stronger and cheaper

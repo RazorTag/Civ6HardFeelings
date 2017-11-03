@@ -26,11 +26,8 @@ UPDATE GreatPersonIndividuals SET AreaHighlightRadius = NULL;	--highlighting for
 --Set siege unit movement to 1
 UPDATE Units SET BaseMoves = '1' WHERE
 	UnitType = 'UNIT_BATTERING_RAM' OR
-	UnitType = 'UNIT_SIEGE_TOWER'; --OR
+	UnitType = 'UNIT_SIEGE_TOWER';
 	--UnitType = 'UNIT_CATAPULT' OR
 	--UnitType = 'UNIT_BOMBARD' OR
 	--UnitType = 'UNIT_ARTILLERY' OR
 	--UnitType = 'UNIT_ROCKET_ARTILLERY';
-
---Get rid of comdemn heretic option against non-combat religious units
-UPDATE UnitCommands SET PrereqCivic = 'CIVIC_FUTURE_CIVIC' WHERE CommandType = 'UNITCOMMAND_CONDEMN_HERETIC';
