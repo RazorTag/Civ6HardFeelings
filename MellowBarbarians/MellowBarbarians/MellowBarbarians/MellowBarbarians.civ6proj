@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>HF: Mellow Barbarians</Name>
+    <Guid>1575afd2-5f3e-4d4c-a493-2e866c618b3d</Guid>
+    <ProjectGuid>4efe58fa-7d73-4abb-8478-35b941885af6</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Less violent barbarians</Teaser>
+    <Description>-Reduces the size of barbarian raids and attacks for medium difficulties (prince-emperor).[NEWLINE]-Reduces the max number of barb camps per civ.[NEWLINE]-Increases the minimum spawn distance from cities.[NEWLINE]-Decreases the minimum distance between barb camps.[NEWLINE]-Stops barbarians from becoming more aggressive after killing a unit.</Description>
+    <Authors>Evan Norsworthy</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>MellowBarbarians</AssemblyName>
+    <RootNamespace>MellowBarbarians</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>GlobalParameters.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GlobalParameters.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
