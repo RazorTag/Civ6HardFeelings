@@ -8,16 +8,21 @@
 --FROM Units WHERE UnitType = 'UNIT_GREAT_GENERAL';
 
 --Make great generals and admirals capturable
-UPDATE Units SET CanRetreatWhenCaptured = '0' WHERE
-	UnitType = 'UNIT_GREAT_GENERAL' OR
-	UnitType = 'UNIT_GREAT_ADMIRAL' OR
-	UnitType = 'UNIT_GREAT_ENGINEER' OR
-	UnitType = 'UNIT_GREAT_MERCHANT' OR
-	UnitType = 'UNIT_GREAT_PROPHET' OR
-	UnitType = 'UNIT_GREAT_SCIENTIST' OR
-	UnitType = 'UNIT_GREAT_WRITER' OR
-	UnitType = 'UNIT_GREAT_ARTIST' OR
-	UnitType = 'UNIT_GREAT_MUSICIAN';
+--UPDATE Units SET CanRetreatWhenCaptured = '0' WHERE
+	--UnitType = 'UNIT_GREAT_GENERAL' OR
+	--UnitType = 'UNIT_GREAT_ADMIRAL' OR
+	--UnitType = 'UNIT_GREAT_ENGINEER' OR
+	--UnitType = 'UNIT_GREAT_MERCHANT' OR
+	--UnitType = 'UNIT_GREAT_PROPHET' OR
+	--UnitType = 'UNIT_GREAT_SCIENTIST' OR
+	--UnitType = 'UNIT_GREAT_WRITER' OR
+	--UnitType = 'UNIT_GREAT_ARTIST' OR
+	--UnitType = 'UNIT_GREAT_MUSICIAN';
+
+--Allow settlers and builders to retreat when captured like great people do in vanilla
+UPDATE Units SET CanRetreatWhenCaptured = '1' WHERE
+	UnitType = 'UNIT_SETTLER' OR
+	UnitType = 'UNIT_BUILDER';
 
 --Remove great general and great admiral combat and movement buffs
 DELETE FROM GreatPersonIndividualBirthModifiers;	--AOE buffs
@@ -31,3 +36,6 @@ UPDATE Units SET BaseMoves = '1' WHERE
 	--UnitType = 'UNIT_BOMBARD' OR
 	--UnitType = 'UNIT_ARTILLERY' OR
 	--UnitType = 'UNIT_ROCKET_ARTILLERY';
+
+--Increase cost of siege towers
+UPDATE Units SET Cost = Cost*5, Maintenance = Maintenance*5 WHERE UnitType = 'UNIT_SIEGE_TOWER';

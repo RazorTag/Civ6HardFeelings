@@ -2,10 +2,10 @@
 -- Author: Evan Norsworthy
 -- DateCreated: 10/27/2017 10:19:42 AM
 --------------------------------------------------------------
---Make ancient walls cheaper, buyable, and stronger
+--Make ancient walls buyable, stronger, and available from the start of the game
 UPDATE Buildings
-SET Cost = Cost/2, PurchaseYield = 'YIELD_GOLD', OuterDefenseStrength = '5', OuterDefenseHitpoints = '100'
-WHERE	BuildingType = 'BUILDING_WALLS';
+SET Cost = Cost/2, PurchaseYield = 'YIELD_GOLD', OuterDefenseStrength = '5', OuterDefenseHitpoints = '100', PrereqTech = NULL
+WHERE BuildingType = 'BUILDING_WALLS';
 
 --Make Medieval walls stronger and cheaper
 UPDATE Buildings
@@ -19,6 +19,5 @@ WHERE BuildingType = 'BUILDING_STAR_FORT';
 
 --Palace gives a large defensive bonus
 UPDATE Buildings
-SET OuterDefenseStrength = '20', OuterDefenseHitpoints = '100'
+SET OuterDefenseStrength = '100', OuterDefenseHitpoints = '100'
 WHERE BuildingType = 'BUILDING_PALACE';
-
