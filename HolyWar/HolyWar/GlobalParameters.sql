@@ -1,0 +1,6 @@
+-- GlobalParameters
+-- Author: Evan Norsworthy
+-- DateCreated: 11/4/2017 9:28:23 PM
+--------------------------------------------------------------
+--Enable unlocking of governments with faith
+--UPDATE GlobalParameters SET Value = 'true' WHERE Name = 'GOVERNMENT_UNLOCK_WITH_FAITH';
