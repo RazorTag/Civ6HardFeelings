@@ -9,7 +9,7 @@ UPDATE GlobalParameters SET Value = '2' WHERE Name = 'BARBARIAN_CAMP_MAX_PER_MAJ
 UPDATE GlobalParameters SET Value = '6' WHERE Name = 'BARBARIAN_CAMP_MINIMUM_DISTANCE_CITY';
 	
 --Space Between Barbarian Camps, default value of 7
-UPDATE GlobalParameters SET Value = '4' WHERE Name = 'BARBARIAN_CAMP_MINIMUM_DISTANCE_ANOTHER_CAMP';
+--UPDATE GlobalParameters SET Value = '4' WHERE Name = 'BARBARIAN_CAMP_MINIMUM_DISTANCE_ANOTHER_CAMP';
 
 --Stop barbarians from becoming more aggressive after killing a civ's unit
 UPDATE GlobalParameters SET Value = '0' WHERE Name = 'BARBARIAN_BOLDNESS_PER_KILL';
