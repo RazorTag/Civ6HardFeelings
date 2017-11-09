@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>Cultural Appropriation</Name>
+    <Name>HF: Cultural Appropriation</Name>
     <Guid>f4d6afe2-4a94-458e-afc7-4bc959ce7437</Guid>
     <ProjectGuid>eeb5b9e5-684f-477c-96d5-da6eb7c5213f</ProjectGuid>
     <ModVersion>1</ModVersion>
