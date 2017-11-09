@@ -17,7 +17,7 @@
     <SupportsHotSeat>true</SupportsHotSeat>
     <AssemblyName>PeaceWar</AssemblyName>
     <RootNamespace>PeaceWar</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>Buildings.sql</File><File>GlobalParameters.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.sql</File><File>GameText.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>Buildings.sql</File><File>GlobalParameters.sql</File><File>Yields.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.sql</File><File>GameText.xml</File></UpdateText></InGameActions>]]></InGameActionData>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.sql</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
@@ -40,6 +40,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Units.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Yields.sql">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
