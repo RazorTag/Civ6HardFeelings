@@ -16,13 +16,13 @@ UPDATE GlobalParameters SET Value = '0' WHERE Name = 'BARBARIAN_BOLDNESS_PER_KIL
 
 --Reduce the number of units in barbarian raids of all types
 UPDATE BarbarianAttackForces
-SET NumMeleeUnits = '1', NumRangeUnits = '1', NumSiegeUnits = '0'
+SET NumMeleeUnits = '0', NumRangeUnits = '1', NumSiegeUnits = '0'
 WHERE AttackForceType = 'StandardRaid' OR AttackForceType = 'StandardAttack';
 UPDATE BarbarianAttackForces
-SET NumMeleeUnits = '1', NumRangeUnits = '1', NumSiegeUnits = '0'
+SET NumMeleeUnits = '0', NumRangeUnits = '1', NumSiegeUnits = '0'
 WHERE AttackForceType = 'CavalryRaid' OR AttackForceType = 'CavalryAttack';
 UPDATE BarbarianAttackForces
-SET NumMeleeUnits = '1', NumRangeUnits = '1', NumSiegeUnits = '0'
+SET NumMeleeUnits = '0', NumRangeUnits = '1', NumSiegeUnits = '0'
 WHERE AttackForceType = 'NavalRaid' OR AttackForceType = 'NavalAttack';
 
 --Increase the passive unit spawn rate of barbarian camps (default: 15 for melee and naval, 25 for cavalry)
