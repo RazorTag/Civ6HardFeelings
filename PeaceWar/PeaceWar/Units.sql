@@ -38,4 +38,4 @@ UPDATE Units SET BaseMoves = '1' WHERE
 	--UnitType = 'UNIT_ROCKET_ARTILLERY';
 
 --Increase cost of siege towers
-UPDATE Units SET Cost = Cost*5, Maintenance = Maintenance*5 WHERE UnitType = 'UNIT_SIEGE_TOWER';
+UPDATE Units SET Cost = Cost*5 WHERE UnitType = 'UNIT_SIEGE_TOWER';

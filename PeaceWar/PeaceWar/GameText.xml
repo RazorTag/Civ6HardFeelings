@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameText -->
+<!-- Author: enors -->
+<!-- DateCreated: 11/7/2017 6:37:51 PM -->
+<GameData>
+	<LocalizedText>
+		<Row Tag="LOC_BUILDING_EPN_CITY_DEFENSES_NAME" Language="en_US">
+			<Text>Castrum</Text>
+		</Row>
+
+		<Row Tag="LOC_BUILDING_EPN_CITY_DEFENSES_DESCRIPTION" Language="en_US">
+			<Text>Provides protection for the City Center and Encampment district. Provides 50 Hitpoints and allows [ICON_Ranged] Ranged Strikes from the City Center and Encampment district. Must be defeated before a city can be assaulted.</Text>
+		</Row>
+	</LocalizedText>
+
+	<IconDefinitions>
+		<Row Name="ICON_BUILDING_EPN_CITY_DEFENSES" Atlas="ICON_ATLAS_BUILDINGS" Index="6"/>
+	</IconDefinitions>
+</GameData>
