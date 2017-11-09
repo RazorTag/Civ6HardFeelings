@@ -17,8 +17,8 @@
     <SupportsHotSeat>true</SupportsHotSeat>
     <AssemblyName>CivilizationBalance</AssemblyName>
     <RootNamespace>CivilizationBalance</RootNamespace>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.sql</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>Civilizations.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.sql</File></UpdateText></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>GlobalParameters.sql</File><File>Projects.sql</File><File>Happinesses.sql</File><File>Civilizations.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.xml</File></UpdateText></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -30,7 +30,16 @@
     <Content Include="Civilizations.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="GameText.sql">
+    <Content Include="GameText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GlobalParameters.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Happinesses.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Projects.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Units.sql">
