@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>HF: Civilization Balance</Name>
+    <Name>HF: Game Balance</Name>
     <Guid>4eaf5625-ad37-497f-ac55-2a65a15638b3</Guid>
     <ProjectGuid>4022d05a-7919-4515-8e9d-927544642204</ProjectGuid>
     <ModVersion>1</ModVersion>

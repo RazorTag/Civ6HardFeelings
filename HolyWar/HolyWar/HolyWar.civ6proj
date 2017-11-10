@@ -6,8 +6,8 @@
     <Guid>1a684a38-d06a-4948-b5a2-14e030331002</Guid>
     <ProjectGuid>d70626fa-35ed-4b21-bf3e-5d489e1676ed</ProjectGuid>
     <ModVersion>1</ModVersion>
-    <Teaser>Gives more combat capabilities to religious units.</Teaser>
-    <Description>Gives more combat capabilities to religious units.</Description>
+    <Teaser>Makes religion more potent</Teaser>
+    <Description>-Faster passive spread of religion</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>
