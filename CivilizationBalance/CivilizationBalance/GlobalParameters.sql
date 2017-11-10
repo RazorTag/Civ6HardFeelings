@@ -42,13 +42,13 @@ UPDATE GlobalParameters SET Value = '0' WHERE Name = 'WAR_WEARINESS_LOSS_OVER_RE
 --Border Expansion
 --------------------------------------------------------------
 --Culture cost of the first tile expansion for a city (default: 10)
-UPDATE GlobalParameters SET Value = '10' WHERE Name = 'CULTURE_COST_FIRST_PLOT';
+UPDATE GlobalParameters SET Value = '5' WHERE Name = 'CULTURE_COST_FIRST_PLOT';
 
 --Culture cost of the first tile expansion for a city (default: 1.3)
 UPDATE GlobalParameters SET Value = '1' WHERE Name = 'CULTURE_COST_LATER_PLOT_EXPONENT';
 
 --Culture cost of the first tile expansion for a city (default: 6)
-UPDATE GlobalParameters SET Value = '6' WHERE Name = 'CULTURE_COST_LATER_PLOT_MULTIPLIER';
+UPDATE GlobalParameters SET Value = '5' WHERE Name = 'CULTURE_COST_LATER_PLOT_MULTIPLIER';
 
 
 --Free amenities for new cities (default: 1)
@@ -57,6 +57,8 @@ UPDATE GlobalParameters SET Value = '1' WHERE Name = 'CITY_AMENITIES_FOR_FREE';
 --Faster natural spread for religion (default: 1)
 UPDATE GlobalParameters SET Value = '10' WHERE Name = 'RELIGION_SPREAD_ADJACENT_PER_TURN_PRESSURE';
 
-
 --Prevent the space race from hard countering tourism
 UPDATE ModifierArguments SET Value = '1' WHERE ModifierId = 'PROJECT_COMPLETION_GRANT_CULTURE_BASED_ON_SCIENCE_RATE' and Name = 'Multiplier';
+
+--Stop units from healing when they level up
+UPDATE GlobalParameters SET Value = '20' WHERE Name = 'EXPERIENCE_PROMOTE_HEALED';
