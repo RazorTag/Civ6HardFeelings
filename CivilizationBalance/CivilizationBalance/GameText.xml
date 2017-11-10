@@ -97,7 +97,7 @@
 		
 		<!-- Inherent happiness building -->
 		<Row Tag="LOC_BUILDING_EPN_HAPPINESS_NAME" Language="en_US">
-			<Text>Happiness</Text>
+			<Text>Happiness (+4 in first four cities)</Text>
 		</Row>
 		<Row Tag="LOC_BUILDING_EPN_HAPPINESS_DESCRIPTION" Language="en_US">
 			<Text>The first four cities founded by a civilization receive +4 [ICON_Amenities] Amenities.</Text>
