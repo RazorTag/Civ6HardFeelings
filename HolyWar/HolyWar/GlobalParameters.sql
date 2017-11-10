@@ -7,3 +7,6 @@
 
 --Faster natural spread for religion (default: 1)
 UPDATE GlobalParameters SET Value = '10' WHERE Name = 'RELIGION_SPREAD_ADJACENT_PER_TURN_PRESSURE';
+
+--Condemning religious units does not remove their religion from nearby cities
+UPDATE GlobalParameters SET Value = '0' WHERE Name = 'RELIGION_SPREAD_UNIT_CAPTURE';

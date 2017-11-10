@@ -7,7 +7,7 @@
     <ProjectGuid>d70626fa-35ed-4b21-bf3e-5d489e1676ed</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>Makes religion more potent</Teaser>
-    <Description>-Faster passive spread of religion</Description>
+    <Description>-Faster passive spread of religion.[NEWLINE]-Condemning religious units does not remove their religion from nearby cities.</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>
