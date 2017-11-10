@@ -56,3 +56,7 @@ UPDATE GlobalParameters SET Value = '1' WHERE Name = 'CITY_AMENITIES_FOR_FREE';
 
 --Faster natural spread for religion (default: 1)
 UPDATE GlobalParameters SET Value = '10' WHERE Name = 'RELIGION_SPREAD_ADJACENT_PER_TURN_PRESSURE';
+
+
+--Prevent the space race from hard countering tourism
+UPDATE ModifierArguments SET Value = '1' WHERE ModifierId = 'PROJECT_COMPLETION_GRANT_CULTURE_BASED_ON_SCIENCE_RATE' and Name = 'Multiplier';

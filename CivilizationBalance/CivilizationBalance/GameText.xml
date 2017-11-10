@@ -6,25 +6,25 @@
 	<LocalizedText>
 		<!-- District projects -->
 		<Replace Tag="LOC_PROJECT_ENHANCE_DISTRICT_ENCAMPMENT_DESCRIPTION" Language="en_US">
-			<Text>District-based project which provides 30% of [ICON_Production] as [ICON_Gold] Gold every turn.</Text>
+			<Text>District-based project which provides 30% of [ICON_Production] Production as [ICON_Gold] Gold every turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ENHANCE_DISTRICT_HARBOR_DESCRIPTION" Language="en_US">
-			<Text>District-based project which provides 30% of [ICON_Production] as [ICON_Gold] Gold every turn.</Text>
+			<Text>District-based project which provides 30% of [ICON_Production] Production as [ICON_Gold] Gold every turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ENHANCE_DISTRICT_INDUSTRIAL_ZONE_DESCRIPTION" Language="en_US">
-			<Text>District-based project which provides 30% of [ICON_Production] as [ICON_Gold] Gold every turn.</Text>
+			<Text>District-based project which provides 30% of [ICON_Production] Production as [ICON_Gold] Gold every turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ENHANCE_DISTRICT_COMMERCIAL_HUB_DESCRIPTION" Language="en_US">
-			<Text>District-based project which provides 60% of [ICON_Production] as [ICON_Gold] Gold every turn.</Text>
+			<Text>District-based project which provides 60% of [ICON_Production] Production as [ICON_Gold] Gold every turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ENHANCE_DISTRICT_HOLY_SITE_DESCRIPTION" Language="en_US">
-			<Text>District-based project which provides 30% of [ICON_Production] as [ICON_Faith] Faith every turn.</Text>
+			<Text>District-based project which provides 30% of [ICON_Production] Production as [ICON_Faith] Faith every turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ENHANCE_DISTRICT_CAMPUS_DESCRIPTION" Language="en_US">
-			<Text>District-based project which provides 30% of [ICON_Production] as [ICON_Science] Science every turn.</Text>
+			<Text>District-based project which provides 30% of [ICON_Production] Production as [ICON_Science] Science every turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ENHANCE_DISTRICT_THEATER_DESCRIPTION" Language="en_US">
-			<Text>District-based project which provides 30% of [ICON_Production] as [ICON_Culture] Culture every turn.</Text>
+			<Text>District-based project which provides 30% of [ICON_Production] Production as [ICON_Culture] Culture every turn.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_CARNIVAL_DESCRIPTION" Language="en_US">
 			<Text>Brazilian unique project which provides +2 [ICON_Amenities] Amenities when active.</Text>
@@ -94,5 +94,13 @@
 		<Replace Tag="LOC_HAPPINESS_ECSTATIC_NAME" Language="en_US">
 			<Text>Ecstatic +50%</Text>
 		</Replace>
+		
+		<!-- Inherent happiness building -->
+		<Row Tag="LOC_BUILDING_EPN_HAPPINESS_NAME" Language="en_US">
+			<Text>Happiness</Text>
+		</Row>
+		<Row Tag="LOC_BUILDING_EPN_HAPPINESS_DESCRIPTION" Language="en_US">
+			<Text>The first four cities founded by a civilization receive +4 [ICON_Amenities] Amenities.</Text>
+		</Row>
 	</LocalizedText>
 </GameData>

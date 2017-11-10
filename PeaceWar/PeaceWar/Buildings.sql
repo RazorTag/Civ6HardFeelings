@@ -12,6 +12,10 @@ UPDATE Buildings
 SET OuterDefenseStrength = '50', OuterDefenseHitpoints = '50'
 WHERE BuildingType = 'BUILDING_PALACE';
 
+
+--------------------------------------------------------------
+--Inherent city defenses
+--------------------------------------------------------------
 --Create a precursor to ancient walls
 INSERT INTO Types
 		(Type,								Kind)
