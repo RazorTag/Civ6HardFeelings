@@ -7,7 +7,7 @@
     <ProjectGuid>22dc14f6-5c66-48e4-93e7-dcc151d36281</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>Balancing changes to districts</Teaser>
-    <Description>Balancing changes to districts</Description>
+    <Description>-Changes district cost progression from game progression to the number that the player has built.[NEWLINE]-Increase specialist yields from 2 to 3 in most cases.</Description>
     <Authors>enors</Authors>
     <SpecialThanks>
     </SpecialThanks>
