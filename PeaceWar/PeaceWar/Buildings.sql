@@ -2,10 +2,14 @@
 -- Author: Evan Norsworthy
 -- DateCreated: 10/27/2017 10:19:42 AM
 --------------------------------------------------------------
---Make Medieval and Renaissance walls stronger and cheaper
+UPDATE Buildings
+SET PurchaseYield = 'YIELD_GOLD', OuterDefenseStrength = '5'
+WHERE BuildingType = 'BUILDING_WALLS';
+
+--Make Medieval and Renaissance walls stronger and cheaper, and buyable
 UPDATE Buildings
 SET Cost = Cost/2, PurchaseYield = 'YIELD_GOLD', OuterDefenseStrength = '5'
-WHERE BuildingType = 'BUILDING_WALLS' OR 'BUILDING_CASTLE' OR 'BUILDING_STAR_FORT';
+WHERE BuildingType = 'BUILDING_CASTLE' OR BuildingType = 'BUILDING_STAR_FORT';
 
 --Palace gives a large defensive bonus
 UPDATE Buildings
@@ -23,8 +27,8 @@ VALUES	('BUILDING_EPN_CITY_DEFENSES',		'KIND_BUILDING');
 
 --Create a precursor to ancient walls
 INSERT INTO Buildings	
-		(BuildingType,					Name,									Description,									OuterDefenseStrength,		Cost,	PrereqTech, MaxPlayerInstances, AdvisorType, TraitType, PrereqCivic, MaxWorldInstances, Capital, PrereqDistrict, AdjacentDistrict, RequiresPlacement, RequiresRiver, OuterDefenseHitPoints, Housing, Entertainment, AdjacentResource, Coast, EnabledByReligion, AllowsHolyCity, PurchaseYield, MustPurchase, Maintenance, IsWonder, CitizenSlots, MustBeLake, MustNotBeLake, RegionalRange, AdjacentToMountain, ObsoleteEra, RequiresReligion, GrantFortification, DefenseModifier, InternalOnly, RequiresAdjacentRiver, Quote, QuoteAudio, MustBeAdjacentLand, AdjacentCapital, AdjacentImprovement, CityAdjacentTerrain)
-SELECT  'BUILDING_EPN_CITY_DEFENSES',	'LOC_BUILDING_EPN_CITY_DEFENSES_NAME',	'LOC_BUILDING_EPN_CITY_DEFENSES_DESCRIPTION',	0,							1,		NULL,		4,					AdvisorType, TraitType, PrereqCivic, MaxWorldInstances, Capital, PrereqDistrict, AdjacentDistrict, RequiresPlacement, RequiresRiver, OuterDefenseHitPoints, Housing, Entertainment, AdjacentResource, Coast, EnabledByReligion, AllowsHolyCity, PurchaseYield, MustPurchase, Maintenance, IsWonder, CitizenSlots, MustBeLake, MustNotBeLake, RegionalRange, AdjacentToMountain, ObsoleteEra, RequiresReligion, GrantFortification, DefenseModifier, InternalOnly, RequiresAdjacentRiver, Quote, QuoteAudio, MustBeAdjacentLand, AdjacentCapital, AdjacentImprovement, CityAdjacentTerrain
+		(BuildingType,					Name,									Description,									OuterDefenseStrength,		Cost,	PrereqTech, MaxPlayerInstances, MustPurchase,	PurchaseYield,	AdvisorType, TraitType, PrereqCivic, MaxWorldInstances, Capital, PrereqDistrict, AdjacentDistrict, RequiresPlacement, RequiresRiver, OuterDefenseHitPoints, Housing, Entertainment, AdjacentResource, Coast, EnabledByReligion, AllowsHolyCity, Maintenance, IsWonder, CitizenSlots, MustBeLake, MustNotBeLake, RegionalRange, AdjacentToMountain, ObsoleteEra, RequiresReligion, GrantFortification, DefenseModifier, InternalOnly, RequiresAdjacentRiver, Quote, QuoteAudio, MustBeAdjacentLand, AdjacentCapital, AdjacentImprovement, CityAdjacentTerrain)
+SELECT  'BUILDING_EPN_CITY_DEFENSES',	'LOC_BUILDING_EPN_CITY_DEFENSES_NAME',	'LOC_BUILDING_EPN_CITY_DEFENSES_DESCRIPTION',	25,							1,		NULL,		4,					1,				NULL,			AdvisorType, TraitType, PrereqCivic, MaxWorldInstances, Capital, PrereqDistrict, AdjacentDistrict, RequiresPlacement, RequiresRiver, OuterDefenseHitPoints, Housing, Entertainment, AdjacentResource, Coast, EnabledByReligion, AllowsHolyCity, Maintenance, IsWonder, CitizenSlots, MustBeLake, MustNotBeLake, RegionalRange, AdjacentToMountain, ObsoleteEra, RequiresReligion, GrantFortification, DefenseModifier, InternalOnly, RequiresAdjacentRiver, Quote, QuoteAudio, MustBeAdjacentLand, AdjacentCapital, AdjacentImprovement, CityAdjacentTerrain
 FROM Buildings WHERE BuildingType = 'BUILDING_WALLS';
 
 --Hide the Castrum in the Civilopedia

@@ -6,8 +6,8 @@
     <Guid>4eaf5625-ad37-497f-ac55-2a65a15638b3</Guid>
     <ProjectGuid>4022d05a-7919-4515-8e9d-927544642204</ProjectGuid>
     <ModVersion>1</ModVersion>
-    <Teaser>Balances some of the unique units, leader abilities, and civilization abilities.</Teaser>
-    <Description>Balances some of the unique units, leader abilities, and civilization abilities.</Description>
+    <Teaser>Balances civs, units, war weariness, and makes playing tall more viable.</Teaser>
+    <Description>-Citizens do not revolt due to amenities.[NEWLINE]-Extra war weariness for fighting in foreign territory.[NEWLINE]-Extra war weariness for launching nukes.[NEWLINE]-War weariness decays faster and at the same rate when at peace or war.[NEWLINE]-Unit nerfs: war-cart, knight, mamluk, rocket artillery.[NEWLINE]-Unit buffs: spearman, hoplite, pikeman, samurai, berserker, frigate, AT crew, machine gun, helicopter, modern AT.[NEWLINE]-Removes Scythia's heal after killing a unit.[NEWLINE]-Changes happiness/unhappiness yield scaling and remove revolt: +/- 5% yields for each happy/sad.[NEWLINE]-Removes great person point generation from district projects.[NEWLINE]-Provides +2 amenities to the first 4 cities.</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>

@@ -5,7 +5,7 @@
 <GameData>
 	<LocalizedText>
 		<Row Tag="LOC_BUILDING_EPN_CITY_DEFENSES_NAME" Language="en_US">
-			<Text>Castrum (first 4 cities)</Text>
+			<Text>Castrum</Text>
 		</Row>
 
 		<Row Tag="LOC_BUILDING_EPN_CITY_DEFENSES_DESCRIPTION" Language="en_US">

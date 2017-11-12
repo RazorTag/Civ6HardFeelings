@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # ModBuddy Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "CivilizationBalance", "CivilizationBalance\CivilizationBalance.civ6proj", "{4022D05A-7919-4515-8E9D-927544642204}"
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "GameBalance", "CivilizationBalance\GameBalance.civ6proj", "{4022D05A-7919-4515-8E9D-927544642204}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

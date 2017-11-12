@@ -37,5 +37,8 @@ UPDATE Units SET BaseMoves = '1' WHERE
 	--UnitType = 'UNIT_ARTILLERY' OR
 	--UnitType = 'UNIT_ROCKET_ARTILLERY';
 
+--Increase cost of battering rams
+UPDATE Units SET Cost = Cost*2 WHERE UnitType = 'UNIT_BATTERING_RAM';
+
 --Increase cost of siege towers
 UPDATE Units SET Cost = Cost*5 WHERE UnitType = 'UNIT_SIEGE_TOWER';
