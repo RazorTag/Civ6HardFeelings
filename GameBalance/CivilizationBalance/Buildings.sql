@@ -3,7 +3,7 @@
 -- DateCreated: 11/9/2017 10:16:20 PM
 
 --Give the Palace more amenities
-UPDATE Buildings SET Entertainment = 3 WHERE BuildingType = 'BUILDING_PALACE';
+--UPDATE Buildings SET Entertainment = 3 WHERE BuildingType = 'BUILDING_PALACE';
 
 ----------------------------------------------------------------
 ----Inherent amenity for first four cities
