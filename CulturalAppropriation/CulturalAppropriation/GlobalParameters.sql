@@ -7,3 +7,6 @@ UPDATE ModifierArguments SET Value = '1' WHERE ModifierId = 'PROJECT_COMPLETION_
 
 --Stop units from healing when they level up
 UPDATE GlobalParameters SET Value = '20' WHERE Name = 'EXPERIENCE_PROMOTE_HEALED';
+
+--Max distance that borders can spread from a city (default: 5)
+UPDATE GlobalParameters SET Value = '15' WHERE Name = 'PLOT_INFLUENCE_MAX_ACQUIRE_DISTANCE';
