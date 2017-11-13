@@ -36,3 +36,6 @@ UPDATE Units SET Maintenance = 6, Combat = 90, Cost = 530 WHERE UnitType = 'UNIT
 
 --Default: 95 bombard
 UPDATE Units SET Bombard = 90 WHERE UnitType = 'UNIT_ROCKET_ARTILLERY';
+
+--Make the saka horse archer into a fast archer
+--UPDATE Units SET Range = 2 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';

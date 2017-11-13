@@ -7,4 +7,4 @@ UPDATE Project_GreatPersonPoints SET Points = 0;
 
 --Double the project yields to compensate for loss of great person points
 UPDATE Project_YieldConversions SET PercentOfProductionRate = PercentOfProductionRate*2;
-UPDATE Projects SET AmenitiesWhileActive = AmenitiesWhileActive*2 WHERE ProjectType = 'PROJECT_CARNIVAL';
+UPDATE Projects SET AmenitiesWhileActive = AmenitiesWhileActive*3 WHERE ProjectType = 'PROJECT_CARNIVAL';
