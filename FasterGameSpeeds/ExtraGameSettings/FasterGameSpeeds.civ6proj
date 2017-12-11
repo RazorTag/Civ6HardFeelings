@@ -18,7 +18,10 @@
     <AssemblyName>ExtraGameSettings</AssemblyName>
     <RootNamespace>ExtraGameSettings</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Options"><File>GameInfo.xml</File></UpdateDatabase><UpdateText id="Text"><File>GameText.xml</File></UpdateText><UpdateArt id="ModArt"><File>(Mod Art Dependency File)</File></UpdateArt></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="GameData"><File>GameData.xml</File></UpdateDatabase><UpdateText id="Text"><File>GameText.xml</File></UpdateText><UpdateArt id="ModArt"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="GameData"><File>GameSpeeds.sql</File></UpdateDatabase><UpdateText id="Text"><File>GameText.xml</File></UpdateText><UpdateArt id="ModArt"><File>(Mod Art Dependency File)</File></UpdateArt></InGameActions>]]></InGameActionData>
+    <AssociationData><![CDATA[<Associations>
+  <Reference type="Mod" title="8 Ages Of Pace" id="4ca4ada1-5aaa-4663-ba98-ccbc50efcf83" />
+</Associations>]]></AssociationData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -27,13 +30,13 @@
     <None Include="Mod.Art.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GameSpeeds.sql">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="GameText.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="GameInfo.xml">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="GameData.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

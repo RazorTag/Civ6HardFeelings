@@ -56,3 +56,6 @@ UPDATE GlobalParameters SET Value = '5' WHERE Name = 'CULTURE_COST_LATER_PLOT_MU
 
 --Free amenities for new cities (default: 1)
 UPDATE GlobalParameters SET Value = '0' WHERE Name = 'CITY_AMENITIES_FOR_FREE';
+
+--Stop units from healing when they level up
+UPDATE GlobalParameters SET Value = '20' WHERE Name = 'EXPERIENCE_PROMOTE_HEALED';

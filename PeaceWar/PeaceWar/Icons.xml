@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icons -->
+<!-- Author: enors -->
+<!-- DateCreated: 12/11/2017 1:04:23 AM -->
+<GameData>
+	<IconDefinitions>
+		<Row Name="ICON_BUILDING_EPN_CITY_DEFENSES" Atlas="ICON_ATLAS_BUILDINGS" Index="6"/>
+	</IconDefinitions>
+</GameData>

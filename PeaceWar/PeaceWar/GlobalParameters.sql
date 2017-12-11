@@ -17,7 +17,7 @@ UPDATE GlobalParameters SET Value = '4' WHERE Name = 'COMBAT_FLANKING_BONUS_MODI
 UPDATE GlobalParameters SET Value = '8' WHERE Name = 'COMBAT_RIVER_DEFENSE';
 
 --Compensate 2-unit formations for power scaling change (default: 10)
-UPDATE GlobalParameters SET Value = '13' WHERE Name = 'COMBAT_CORPS_STRENGTH_MODIFIER';
+UPDATE GlobalParameters SET Value = '16' WHERE Name = 'COMBAT_CORPS_STRENGTH_MODIFIER';
 
 --Compensate 3-unit formations for power scaling change (default: 17)
-UPDATE GlobalParameters SET Value = '22' WHERE Name = 'COMBAT_ARMY_STRENGTH_MODIFIER';
+UPDATE GlobalParameters SET Value = '27' WHERE Name = 'COMBAT_ARMY_STRENGTH_MODIFIER';

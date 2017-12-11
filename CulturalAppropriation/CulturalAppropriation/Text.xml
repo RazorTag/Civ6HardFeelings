@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text -->
+<!-- Author: enors -->
+<!-- DateCreated: 12/9/2017 4:05:44 AM -->
+<GameData>
+	<LocalizedText>
+		<Row Tag="LOC_POLICY_NAME_EPN_OPIATE_OF_THE_MASSES" Language="en_US">
+			<Text>Opiate of the Masses</Text>
+		</Row>
+
+		<Row Tag="LOC_POLICY_DESCRIPTION_EPN_OPIATE_OF_THE_MASSES" Language="en_US">
+			<Text>Provides 1 [ICON_Amenities] Entertainment from each Holy Site or Lavra.</Text>
+		</Row>
+
+		<!-- Civilopedia information about Opiate of the Masses. -->
+		<Row Tag="LOC_PEDIA_GOVERNMENTS_PAGE_POLICY_EPN_OPIATE_OF_THE_MASSES" Language="en_US">
+			<Text>"Religion is the opium of the people" is one of the most frequently paraphrased statements of German philosopher and economist Karl Marx. It was translated from the German original, "Die Religion ... ist das Opium des Volkes" and is often rendered as "religion... is the opiate of the masses."</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

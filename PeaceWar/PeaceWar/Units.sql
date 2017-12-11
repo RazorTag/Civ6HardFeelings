@@ -21,8 +21,8 @@
 
 --Allow settlers and builders to retreat when captured like great people do in vanilla
 UPDATE Units SET CanRetreatWhenCaptured = '1' WHERE
-	UnitType = 'UNIT_SETTLER' OR
-	UnitType = 'UNIT_BUILDER';
+	UnitType = 'UNIT_SETTLER';-- OR
+	--UnitType = 'UNIT_BUILDER';
 
 --Remove great general and great admiral combat and movement buffs
 DELETE FROM GreatPersonIndividualBirthModifiers;	--AOE buffs
@@ -38,7 +38,7 @@ UPDATE Units SET BaseMoves = '1' WHERE
 	--UnitType = 'UNIT_ROCKET_ARTILLERY';
 
 --Increase cost of battering rams
-UPDATE Units SET Cost = Cost*2 WHERE UnitType = 'UNIT_BATTERING_RAM';
+UPDATE Units SET Cost = Cost*3 WHERE UnitType = 'UNIT_BATTERING_RAM';
 
 --Increase cost of siege towers
 UPDATE Units SET Cost = Cost*5 WHERE UnitType = 'UNIT_SIEGE_TOWER';

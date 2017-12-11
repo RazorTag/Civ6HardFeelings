@@ -10,6 +10,12 @@ UPDATE Units SET Maintenance = 1, Cost = 65 WHERE UnitType = 'UNIT_SUMERIAN_WAR_
 --Default: 25 combat, 65 cost
 UPDATE Units SET Combat = 28, Cost = 50 WHERE UnitType = 'UNIT_SPEARMAN' OR UnitType = 'UNIT_GREEK_HOPLITE';
 
+--Default: 80 cost
+UPDATE Units SET Cost = 100 WHERE UnitType = 'UNIT_HORSEMAN';
+
+--Buff the saka horse archer to make up for Scythia losing its double light cavalry (Default: 1 range, 15 combat, 25 ranged strength)
+UPDATE Units SET Range = 2, Combat = 25, RangedCombat = 40 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
+
 --Default: 3 maintenance, 41 combat, 200 cost
 UPDATE Units SET Maintenance = 2, Combat = 45, Cost = 150 WHERE UnitType = 'UNIT_PIKEMAN';
 
@@ -36,6 +42,3 @@ UPDATE Units SET Maintenance = 6, Combat = 90, Cost = 530 WHERE UnitType = 'UNIT
 
 --Default: 95 bombard
 UPDATE Units SET Bombard = 90 WHERE UnitType = 'UNIT_ROCKET_ARTILLERY';
-
---Make the saka horse archer into a fast archer
---UPDATE Units SET Range = 2 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';

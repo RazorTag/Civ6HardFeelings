@@ -7,7 +7,7 @@
     <ProjectGuid>4259ae86-4e32-4f4e-8808-ac84adf04ae8</ProjectGuid>
     <ModVersion>3</ModVersion>
     <Teaser>Makes war more difficult.</Teaser>
-    <Description>-Removes passive AOE auras from great people. Great generals and great admirals do not provide combat or movement bonuses. Also removes Abu Al-Qasim Al-Zahrawi's AOE healing.[NEWLINE]-The battering ram and siege tower have 1 movement.[NEWLINE]-The palace in the capital provides 50 extra melee strength and 100 hitpoints of fortification.[NEWLINE]-Halves the production costs of Medieval Walls and Renaissance Walls.[NEWLINE]-Ancient Walls, Medieval Walls, and Renaissance Walls each receive 5 fortification strength instead of 2.[NEWLINE]-Doubles the cost of a battering ram and pentuples the cost of a siege tower.[NEWLINE]-The first four cities receive a Castrum building which gives 50 extra melee strength and 100 hitpoints of fortification.[NEWLINE]-Reduces the science, culture, faith, and production yields of occupied cities even further.[NEWLINE]-Reduces the impact of the difference in combat strength when determining damage.[NEWLINE]-Allows settlers and builders to retreat to the nearest city when captured.</Description>
+    <Description>-Removes passive AOE auras from great people. Great generals and great admirals do not provide combat or movement bonuses. Also removes Abu Al-Qasim Al-Zahrawi's AOE healing.[NEWLINE]-The battering ram and siege tower have 1 movement.[NEWLINE]-The palace in the capital provides 50 hitpoints of fortification.[NEWLINE]-Halves the production costs of Medieval Walls and Renaissance Walls.[NEWLINE]-Ancient Walls, Medieval Walls, and Renaissance Walls each receive 5 fortification strength instead of 2.[NEWLINE]-Doubles the cost of a battering ram and pentuples the cost of a siege tower.[NEWLINE]-The first four cities receive a Castrum building which gives 50 extra melee strength, 50 hitpoints of fortification, and 2 entertainment.[NEWLINE]-Reduces the science, culture, faith, and production yields of occupied cities even further.[NEWLINE]-Reduces the impact of the difference in combat strength when determining damage.[NEWLINE]-Allows settlers and builders to retreat to the nearest city when captured.</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>
@@ -17,8 +17,8 @@
     <SupportsHotSeat>true</SupportsHotSeat>
     <AssemblyName>PeaceWar</AssemblyName>
     <RootNamespace>PeaceWar</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>Buildings.sql</File><File>GlobalParameters.sql</File><File>Yields.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.sql</File><File>GameText.xml</File></UpdateText></InGameActions>]]></InGameActionData>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.sql</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>Buildings.sql</File><File>GlobalParameters.sql</File><File>Yields.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.sql</File><File>GameText.xml</File></UpdateText><UpdateIcons id="UpdateIcons"><File>Icons.xml</File></UpdateIcons></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.sql</File><File>GameText.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -37,6 +37,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="GlobalParameters.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Icons.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Units.sql">

@@ -8,7 +8,7 @@
 --UPDATE GlobalParameters SET Value = 'true' WHERE Name = 'GOVERNMENT_UNLOCK_WITH_FAITH';
 
 --Faster natural spread for religion (default: 1)
-UPDATE GlobalParameters SET Value = '10' WHERE Name = 'RELIGION_SPREAD_ADJACENT_PER_TURN_PRESSURE';
+UPDATE GlobalParameters SET Value = '5' WHERE Name = 'RELIGION_SPREAD_ADJACENT_PER_TURN_PRESSURE';
 
 --Condemning religious units does not remove their religion from nearby cities
 UPDATE GlobalParameters SET Value = '0' WHERE Name = 'RELIGION_SPREAD_UNIT_CAPTURE';
@@ -20,8 +20,5 @@ UPDATE GlobalParameters SET Value = '0' WHERE Name = 'RELIGION_SPREAD_UNIT_CAPTU
 --Prevent the space race from hard countering tourism
 UPDATE ModifierArguments SET Value = '1' WHERE ModifierId = 'PROJECT_COMPLETION_GRANT_CULTURE_BASED_ON_SCIENCE_RATE' and Name = 'Multiplier';
 
---Stop units from healing when they level up
-UPDATE GlobalParameters SET Value = '20' WHERE Name = 'EXPERIENCE_PROMOTE_HEALED';
-
 --Max distance that borders can spread from a city (default: 5)
-UPDATE GlobalParameters SET Value = '15' WHERE Name = 'PLOT_INFLUENCE_MAX_ACQUIRE_DISTANCE';
+UPDATE GlobalParameters SET Value = '10' WHERE Name = 'PLOT_INFLUENCE_MAX_ACQUIRE_DISTANCE';

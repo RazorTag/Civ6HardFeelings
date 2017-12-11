@@ -17,7 +17,7 @@
     <SupportsHotSeat>true</SupportsHotSeat>
     <AssemblyName>CulturalAppropriation</AssemblyName>
     <RootNamespace>CulturalAppropriation</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>GlobalParameters.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>GlobalParameters.sql</File><File>Buildings.sql</File><File>Policies.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>Text.xml</File></UpdateText><UpdateIcons id="UpdateIcons"><File>Icons.xml</File></UpdateIcons></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -26,7 +26,19 @@
     <None Include="Mod.Art.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Buildings.sql">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="GlobalParameters.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Policies.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

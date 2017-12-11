@@ -7,7 +7,7 @@
     <ProjectGuid>99cf2781-65ba-4963-8dec-c15b8afbd685</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>Changes the dynamic turn timer to scale more slowly as cities and units increase.</Teaser>
-    <Description>Changes the dynamic turn timer to scale more slowly as cities and units increase. This mod is designed to prevent the dynamic turn timer from scaling excessively in the mid to late game.[NEWLINE][NEWLINE]The vanilla game uses the formula 30s + (10s x [max_cities]) + (5s x [max_units]). This mod changes the formula to 40s + (6s x [max_cities]) + (3s x [max_units]).[NEWLINE][NEWLINE]max_cities is the highest number of cities owned by any single human player in the game. max_units is the highest number of units owned by any single human player in the game. max_cities and max_units can come from different players.</Description>
+    <Description>Changes the dynamic turn timer to scale more slowly as cities and units increase. This mod is designed to prevent the dynamic turn timer from scaling excessively in the mid to late game.[NEWLINE][NEWLINE]The vanilla game uses the formula 30s + (10s x [max_cities]) + (5s x [max_units]). This mod changes the formula to 50s + (7s x [max_cities]) + (3s x [max_units]).[NEWLINE][NEWLINE]max_cities is the highest number of cities owned by any single human player in the game. max_units is the highest number of units owned by any single human player in the game. max_cities and max_units can come from different players.</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>

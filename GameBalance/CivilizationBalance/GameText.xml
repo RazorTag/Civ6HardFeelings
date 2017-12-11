@@ -96,20 +96,26 @@
 		</Replace>
 		
 		<!-- Inherent happiness building -->
-		<Row Tag="LOC_BUILDING_EPN_HAPPINESS_NAME" Language="en_US">
+		<!--<Row Tag="LOC_BUILDING_EPN_HAPPINESS_NAME" Language="en_US">
 			<Text>Dispensary</Text>
 		</Row>
 		<Row Tag="LOC_BUILDING_EPN_HAPPINESS_DESCRIPTION" Language="en_US">
 			<Text>The first four cities founded by a civilization receive +1 [ICON_Amenities] Amenities.</Text>
-		</Row>
+		</Row>-->
 		
 		<!-- Scythia selection screen -->
-		<!--<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="en_US">
+		<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="en_US">
 			<Text>Scythian unique Classical era unit. Ranged unit with 4 [ICON_Movement] Movement with a [ICON_Range] Range of 2.</Text>
-		</Replace>-->
+		</Replace>
 
-		<Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION">
-			<Text>All units receive +5 [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they do not heal.</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION" Language="en_US">
+			<Text>All units receive +5 [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 15 hitpoints.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_NAME" Language="en_US">
+			<Text>Epic Quests</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="en_US">
+			<Text>When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>

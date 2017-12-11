@@ -18,7 +18,7 @@
     <AssemblyName>CivilizationBalance</AssemblyName>
     <RootNamespace>CivilizationBalance</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>GlobalParameters.sql</File><File>Projects.sql</File><File>Happinesses.sql</File><File>Civilizations.sql</File><File>Buildings.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.xml</File></UpdateText><ImportFiles id="CityPanel"><File>UI/Panels/CityPanel.lua</File><File>UI/Panels/CityPanelOverview.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>GlobalParameters.sql</File><File>Projects.sql</File><File>Happinesses.sql</File><File>Civilizations.sql</File><File>Buildings.sql</File><File>Resources.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.xml</File></UpdateText><ImportFiles id="CityPanel"><File>UI/Panels/CityPanel.lua</File><File>UI/Panels/CityPanelOverview.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -43,6 +43,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Projects.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Resources.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Panels\CityPanel.lua">

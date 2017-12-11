@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icons -->
+<!-- Author: enors -->
+<!-- DateCreated: 12/10/2017 10:37:11 PM -->
+<GameData>
+	<!--Use the military policy slot icon-->
+	<IconDefinitions>
+		<Row Name="ICON_POLICY_EPN_OPIATE_OF_THE_MASSES"  Atlas="ICON_ATLAS_POLICIES" Index="1"/>
+	</IconDefinitions>
+</GameData>
