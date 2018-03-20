@@ -2,12 +2,12 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>HF: Redistricting</Name>
-    <Guid>6e2a26bd-319e-4258-a272-68068acbfb1c</Guid>
-    <ProjectGuid>22dc14f6-5c66-48e4-93e7-dcc151d36281</ProjectGuid>
+    <Name>Build Queue</Name>
+    <Guid>318be7a7-4df1-4f91-9e51-25ba33121534</Guid>
+    <ProjectGuid>28d9727c-5ecd-4e59-b96f-487a104a0949</ProjectGuid>
     <ModVersion>1</ModVersion>
-    <Teaser>Balancing changes to districts</Teaser>
-    <Description>-Makes specialists more useful and easier to maintain[NEWLINE]-Scales district production costs based on the number built by that player rather than by tech progression[NEWLINE][NEWLINE]*See Steam workshop page for full documentation</Description>
+    <Teaser>QOL improvements for selecting city production</Teaser>
+    <Description>QOL improvements for selecting city production</Description>
     <Authors>enors</Authors>
     <SpecialThanks>
     </SpecialThanks>
@@ -15,9 +15,8 @@
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>true</SupportsMultiplayer>
     <SupportsHotSeat>true</SupportsHotSeat>
-    <AssemblyName>Redistricting</AssemblyName>
-    <RootNamespace>Redistricting</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Districts.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+    <AssemblyName>BuildQueue</AssemblyName>
+    <RootNamespace>BuildQueue</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -26,7 +25,7 @@
     <None Include="Mod.Art.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Districts.sql">
+    <Content Include="Projects.sql">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

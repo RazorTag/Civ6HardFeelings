@@ -23,9 +23,9 @@ UPDATE GlobalParameters SET Value = '0' WHERE Name = 'WAR_WEARINESS_PER_COMBAT_I
 UPDATE GlobalParameters SET Value = '0' WHERE Name = 'WAR_WEARINESS_PER_UNIT_KILLED';
 
 --Gain extra war weariness from launching nukes (default: 10)
-UPDATE GlobalParameters SET Value = '200' WHERE Name = 'WAR_WEARINESS_PER_WMD_LAUNCHED';
+UPDATE GlobalParameters SET Value = '1000' WHERE Name = 'WAR_WEARINESS_PER_WMD_LAUNCHED';
 
---Lose amenities from war weariness faster (default: 400)
+--Lose amenities from war weariness (default: 400)
 UPDATE GlobalParameters SET Value = '400' WHERE Name = 'WAR_WEARINESS_POINTS_FOR_AMENITY_LOSS';
 
 --Unknown trigger (default: 3)

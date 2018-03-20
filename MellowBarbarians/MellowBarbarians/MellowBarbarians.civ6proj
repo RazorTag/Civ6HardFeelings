@@ -7,7 +7,7 @@
     <ProjectGuid>4efe58fa-7d73-4abb-8478-35b941885af6</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>Less violent barbarians</Teaser>
-    <Description>-Reduces the size of barbarian raids and attacks for medium difficulties (prince-emperor).[NEWLINE]-Reduces the max number of barb camps per civ.[NEWLINE]-Increases the minimum spawn distance from cities.[NEWLINE]-Stops barbarians from becoming more aggressive after killing a unit.</Description>
+    <Description>-Makes barbarians less dangerous for medium difficulties (prince-emperor)[NEWLINE][NEWLINE]*See Steam workshop page for full documentation</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>

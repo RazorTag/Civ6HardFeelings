@@ -7,7 +7,7 @@
     <ProjectGuid>4259ae86-4e32-4f4e-8808-ac84adf04ae8</ProjectGuid>
     <ModVersion>3</ModVersion>
     <Teaser>Makes war more difficult.</Teaser>
-    <Description>-Removes passive AOE auras from great people. Great generals and great admirals do not provide combat or movement bonuses. Also removes Abu Al-Qasim Al-Zahrawi's AOE healing.[NEWLINE]-The battering ram and siege tower have 1 movement.[NEWLINE]-The palace in the capital provides 50 hitpoints of fortification.[NEWLINE]-Halves the production costs of Medieval Walls and Renaissance Walls.[NEWLINE]-Ancient Walls, Medieval Walls, and Renaissance Walls each receive 5 fortification strength instead of 2.[NEWLINE]-Doubles the cost of a battering ram and pentuples the cost of a siege tower.[NEWLINE]-The first four cities receive a Castrum building which gives 50 extra melee strength, 50 hitpoints of fortification, and 2 entertainment.[NEWLINE]-Reduces the science, culture, faith, and production yields of occupied cities even further.[NEWLINE]-Reduces the impact of the difference in combat strength when determining damage.[NEWLINE]-Allows settlers and builders to retreat to the nearest city when captured.</Description>
+    <Description>-Makes conquest more difficult, especially in the early game[NEWLINE]-Reduces the advantage that technologically superior units have over technologically inferior units[NEWLINE][NEWLINE]*See Steam workshop page for full documentation</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>
