@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>HF: Flatter Dynamic Turn Timer</Name>
+    <Guid>19913a5c-a91a-4cc8-ae88-991889a667bd</Guid>
+    <ProjectGuid>99cf2781-65ba-4963-8dec-c15b8afbd685</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Changes the dynamic turn timer to scale more slowly as cities and units increase.</Teaser>
+    <Description>-Makes the dynamic turn timer start higher and scale more slowly so that it doesn't get as high in the mid to late game[NEWLINE][NEWLINE]*See Steam workshop page for full documentation</Description>
+    <Authors>Evan Norsworthy</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>false</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>false</SupportsHotSeat>
+    <AssemblyName>DynamicTurnTimer</AssemblyName>
+    <RootNamespace>DynamicTurnTimer</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions />]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="TurnTimer"><File>TurnTimer.xml</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TurnTimer.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

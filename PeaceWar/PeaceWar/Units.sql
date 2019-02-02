@@ -1,5 +1,5 @@
 -- Gameplay
--- Author: Evan Norsworthy
+-- Author: Doomturtle
 -- DateCreated: 10/26/2017 2:47:10 PM
 --------------------------------------------------------------
 --INSERT INTO Units
@@ -20,25 +20,31 @@
 	--UnitType = 'UNIT_GREAT_MUSICIAN';
 
 --Allow settlers and builders to retreat when captured like great people do in vanilla
-UPDATE Units SET CanRetreatWhenCaptured = '1' WHERE
-	UnitType = 'UNIT_SETTLER';-- OR
+UPDATE Units
+SET CanRetreatWhenCaptured = '1'
+WHERE UnitType = 'UNIT_SETTLER';-- OR
 	--UnitType = 'UNIT_BUILDER';
 
---Remove great general and great admiral combat and movement buffs
-DELETE FROM GreatPersonIndividualBirthModifiers;	--AOE buffs
-UPDATE GreatPersonIndividuals SET AreaHighlightRadius = NULL;	--highlighting for AOE buffs
+----Remove great general and great admiral combat and movement buffs
+--DELETE FROM GreatPersonIndividualBirthModifiers;	--AOE buffs
+--UPDATE GreatPersonIndividuals SET AreaHighlightRadius = NULL;	--highlighting for AOE buffs
 
---Set siege unit movement to 1
-UPDATE Units SET BaseMoves = '1' WHERE
+--Remove support siege units
+UPDATE Units
+SET PrereqTech='TECH_FUTURE_TECH'
+WHERE
 	UnitType = 'UNIT_BATTERING_RAM' OR
-	UnitType = 'UNIT_SIEGE_TOWER';
+	UnitType = 'UNIT_SIEGE_TOWER';--OR
 	--UnitType = 'UNIT_CATAPULT' OR
 	--UnitType = 'UNIT_BOMBARD' OR
 	--UnitType = 'UNIT_ARTILLERY' OR
 	--UnitType = 'UNIT_ROCKET_ARTILLERY';
 
---Increase cost of battering rams
-UPDATE Units SET Cost = Cost*3 WHERE UnitType = 'UNIT_BATTERING_RAM';
+----Increase cost of battering rams
+--UPDATE Units SET Cost = Cost*3 WHERE UnitType = 'UNIT_BATTERING_RAM';
+--
+----Increase cost of siege towers
+--UPDATE Units SET Cost = Cost*5 WHERE UnitType = 'UNIT_SIEGE_TOWER';
 
---Increase cost of siege towers
-UPDATE Units SET Cost = Cost*5 WHERE UnitType = 'UNIT_SIEGE_TOWER';
+----Increase the sight range of all units
+--UPDATE Units SET BaseSightRange = BaseSightRange*2;

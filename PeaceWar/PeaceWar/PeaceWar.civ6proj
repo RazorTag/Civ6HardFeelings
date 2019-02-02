@@ -7,7 +7,7 @@
     <ProjectGuid>4259ae86-4e32-4f4e-8808-ac84adf04ae8</ProjectGuid>
     <ModVersion>3</ModVersion>
     <Teaser>Makes war more difficult.</Teaser>
-    <Description>-Makes conquest more difficult, especially in the early game[NEWLINE]-Reduces the advantage that technologically superior units have over technologically inferior units[NEWLINE][NEWLINE]*See Steam workshop page for full documentation</Description>
+    <Description>-Makes conquest more difficult, especially in the early game.[NEWLINE]-All new cities start with 50HP of foritifcation.[NEWLINE]-Gives the palace 50HP of fortification in addition to the 50 HP that every city starts with.[NEWLINE]-Allows settlers to retreat when captured, like great people.[NEWLINE]-Removed battering rams and siege towers.[NEWLINE]-Occupied cities get -75% production instead of -50%. All other yields are reduced to 0 for occupied cities.</Description>
     <Authors>Evan Norsworthy</Authors>
     <SpecialThanks>
     </SpecialThanks>
@@ -17,7 +17,7 @@
     <SupportsHotSeat>true</SupportsHotSeat>
     <AssemblyName>PeaceWar</AssemblyName>
     <RootNamespace>PeaceWar</RootNamespace>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>Buildings.sql</File><File>GlobalParameters.sql</File><File>Yields.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.sql</File><File>GameText.xml</File></UpdateText><UpdateIcons id="UpdateIcons"><File>Icons.xml</File></UpdateIcons></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Units.sql</File><File>Buildings.sql</File><File>Wars.sql</File><File>Yields.sql</File><File>GlobalParameters.sql</File></UpdateDatabase><UpdateText id="UpdateText"><File>GameText.xml</File></UpdateText><UpdateIcons id="UpdateIcons"><File>Icons.xml</File></UpdateIcons></InGameActions>]]></InGameActionData>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.sql</File><File>GameText.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
@@ -43,6 +43,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Units.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Wars.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Yields.sql">

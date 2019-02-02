@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>HF: Ancient Warfare</Name>
+    <Guid>65f8307f-f64c-49fb-9c80-f495c0a991ce</Guid>
+    <ProjectGuid>2c2bdad5-eb85-44e2-80f3-c58eef89a2a2</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Decouple science and warfare</Teaser>
+    <Description>-Removes nukes and all combat units except ancient era units and nerfed versions of catapults and warrior monks.[NEWLINE]-Removes all unique units.</Description>
+    <Authors>Doomturtle</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>AncientCombat</AssemblyName>
+    <RootNamespace>AncientCombat</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="UpdateDatabase"><File>Projects.sql</File><File>Units.sql</File><File>GreatGeneralAdmiral.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="UpdateText"><File>GameText.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GreatGeneralAdmiral.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Projects.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Units.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

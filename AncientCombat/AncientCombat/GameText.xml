@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameText -->
+<!-- Author: Doomturtle -->
+<!-- DateCreated: 8/18/2018 8:11:51 PM -->
+
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_NAME" Language="en_US">
+			<Text>Epic Quests</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="en_US">
+			<Text>When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay half the usual cost to levy city-state units.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

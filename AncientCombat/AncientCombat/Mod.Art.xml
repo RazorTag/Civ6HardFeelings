@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <AssetObjects::GameArtSpecification>
 	<id>
-		<name text="Faster Game Speeds"/>
-		<id text="f6534777-c52e-4537-b508-52f66565ffa2"/>
+		<name text="Ancient Warfare"/>
+		<id text="65f8307f-f64c-49fb-9c80-f495c0a991ce"/>
 	</id>
 	<artConsumers>
 		<Element>

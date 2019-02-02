@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_DIFFICULTY_DEITY_PLUS_NAME" Language="en_US">
+			<Text>Deity+</Text>
+		</Replace>
+		<Replace Tag="LOC_DIFFICULTY_DEITY_PLUSPLUS_NAME" Language="en_US">
+			<Text>Deity++</Text>
+		</Replace>
+		<Replace Tag="RULESET_DEITYPLUSPLUS_FEWER_FREE_AI_UNITS_NAME" Language="en_US">
+			<Text>Fewer free AI units, larger bonuses</Text>
+		</Replace>
+		<Replace Tag="RULESET_DEITYPLUSPLUS_STANDARD_DESCRIPTION" Language="en_US">
+			<Text>This is a standard Civilization VI game.[NEWLINE][NEWLINE]All standard difficulties receive the same number of starting units and bonuses as in the unmodded game. The new difficulty levels Deity+ and Deity++ receive starting units and bonuses extrapolated linearly from the standard difficulty progression.</Text>
+		</Replace>
+		<Replace Tag="RULESET_DEITYPLUSPLUS_FEWER_FREE_AI_UNITS_DESCRIPTION" Language="en_US">
+			<Text>Reduces the number of free AI starting units to roughly half, and compensates by giving the AI significant bonuses to per-turn generation of science, culture, production, etc. The purpose is to give the AI an even progression of bonuses instead of an enormous starting advantage that forces you to play catchup throughout the game. See the mod page at Civfanatics for a complete table of AI starting units and bonuses.[NEWLINE][NEWLINE](This ruleset option provides somewhat similar functionality to the Smoother Difficulty mod by RushSecond, or to my own mod Feudal Ranks for Civilization 5 from way back in 2014.)</Text>
+		</Replace>
+		<Replace Tag="RULESET_DEITYPLUSPLUS_NO_FREE_AI_UNITS_NAME" Language="en_US">
+			<Text>No free AI units, even larger bonuses</Text>
+		</Replace>
+		<Replace Tag="RULESET_DEITYPLUSPLUS_NO_FREE_AI_UNITS_DESCRIPTION" Language="en_US">
+			<Text>Remove all free AI starting units, and compensates by giving the AI even larger bonuses to per-turn generation of science, culture, production, etc. The purpose is to give the AI an even progression of bonuses instead of an enormous starting advantage that forces you to play catchup throughout the game. See the mod page at Civfanatics for a complete table of AI starting units and bonuses.[NEWLINE][NEWLINE](This ruleset option provides very similar functionality to the Smoother Difficulty mod by RushSecond, or to my own mod Feudal Ranks for Civilization 5 from way back in 2014.)</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

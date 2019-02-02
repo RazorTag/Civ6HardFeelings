@@ -1,0 +1,5 @@
+-- GameSpeeds_RiseAndFall
+-- Author: Doomturtle
+-- DateCreated: 9/14/2018 4:41:38 AM
+--------------------------------------------------------------
+--Add faster speed changes for GameSpeed_Durations and GameSpeed_Scalings if I ever figure out what those do and how they are scaled

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Hard Feelings PvM</Name>
+    <Guid>88e6df0e-5d43-4c96-a429-382a4dd7258e</Guid>
+    <ProjectGuid>93f91220-c4f4-4298-9f80-f97b0260a25b</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Collection of mods for use against AI</Teaser>
+    <Description>Combines Game Balance, Persistent Difficulty, Cultural Appropriation, Flatter Dynamic Turn Timer, Faster Game Speeds, Tile Balancing, and Redistricting.</Description>
+    <Authors>Doomturtle</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>Hard Feelings PvM</AssemblyName>
+    <RootNamespace>Hard Feelings PvM</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="GameBalanceText"><File>GameBalance/GameText.xml</File></UpdateText><UpdateText id="GameSpeedsText"><File>FasterGameSpeeds/GameText.xml</File></UpdateText><UpdateDatabase id="GameSpeedsData"><File>FasterGameSpeeds/GameInfo.xml</File></UpdateDatabase></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateText id="GameBalanceText"><File>GameBalance/GameText.xml</File></UpdateText><UpdateDatabase id="GameBalanceData"><File>GameBalance/Buildings.sql</File><File>GameBalance/Civilizations.sql</File><File>GameBalance/GlobalParameters.sql</File><File>GameBalance/Happinesses.sql</File><File>GameBalance/Improvements.sql</File><File>GameBalance/Units.sql</File></UpdateDatabase><UpdateDatabase id="DifficultyData"><File>Difficulty/StartingUnits.sql</File><File>Difficulty/YieldScaling.sql</File></UpdateDatabase><UpdateIcons id="CultureIcons"><File>CulturalAppropriation/Icons.xml</File></UpdateIcons><UpdateText id="CultureText"><File>CulturalAppropriation/Text.xml</File></UpdateText><UpdateDatabase id="CultureData"><File>CulturalAppropriation/GlobalParameters.sql</File><File>CulturalAppropriation/Policies.sql</File></UpdateDatabase><UpdateDatabase id="TurnTimerData"><File>DynamicTurnTimer/TurnTimer.xml</File></UpdateDatabase><UpdateDatabase id="GameSpeedsData"><File>FasterGameSpeeds/GameSpeeds.sql</File><File>FasterGameSpeeds/GameSpeeds_RiseAndFall.sql</File></UpdateDatabase><UpdateDatabase id="Redistricting"><File>Redistricting/Districts.sql</File></UpdateDatabase><UpdateDatabase id="TileBalancingData"><File>TileBalancing/Terrain_YieldChanges.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+    <AssociationData><![CDATA[<Associations>
+  <Block type="Mod" title="Tile Balancing" id="1492861619" />
+  <Block type="Mod" title="Persistent Difficulty" id="1453194971" />
+  <Block type="Mod" title="Cultural Appropriation" id="1197242372" />
+  <Block type="Mod" title="Redistricting" id="1197235193" />
+  <Block type="Mod" title="Game Balance" id="1196289917" />
+  <Block type="Mod" title="Flatter Dynamic Turn Timer" id="1180364645" />
+  <Block type="Mod" title="Faster Game Speeds" id="1179670768" />
+  <Reference type="Mod" title="8 Ages of Pace" id="1109505115" />
+</Associations>]]></AssociationData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GameBalance" />
+    <Folder Include="Difficulty" />
+    <Folder Include="CulturalAppropriation" />
+    <Folder Include="DynamicTurnTimer" />
+    <Folder Include="FasterGameSpeeds" />
+    <Folder Include="TileBalancing" />
+    <Folder Include="Redistricting" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CulturalAppropriation\GlobalParameters.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CulturalAppropriation\Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CulturalAppropriation\Policies.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CulturalAppropriation\Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Difficulty\StartingUnits.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Difficulty\YieldScaling.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DynamicTurnTimer\TurnTimer.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FasterGameSpeeds\GameInfo.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FasterGameSpeeds\GameSpeeds.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FasterGameSpeeds\GameSpeeds_RiseAndFall.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FasterGameSpeeds\GameText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameBalance\Buildings.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameBalance\Civilizations.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameBalance\GameText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameBalance\GlobalParameters.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameBalance\Happinesses.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameBalance\Improvements.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="GameBalance\Units.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Redistricting\Districts.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TileBalancing\Terrain_YieldChanges.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

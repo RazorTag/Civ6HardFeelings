@@ -1,0 +1,18 @@
+-- Wars
+-- Author: Doomturtle
+-- DateCreated: 8/24/2018 8:30:18 PM
+--------------------------------------------------------------
+
+----------------------------------------------------------------
+----Remove or alter overly aggressive war types
+----------------------------------------------------------------
+----Remove surprise war and colonial war
+--UPDATE DiplomaticActions SET TargetPrereqCivic = 'CIVIC_FUTURE_CIVIC'
+--WHERE
+--(
+	--DiplomaticActionType = 'DIPLOACTION_DECLARE_SURPRISE_WAR' OR
+	--DiplomaticActionType = 'DIPLOACTION_DECLARE_COLONIAL_WAR'
+--);
+--UPDATE DiplomaticActions
+--SET DenouncementTurnsRequired=(SELECT DenouncementTurnsRequired FROM DiplomaticActions WHERE DiplomaticActionType='DIPLOACTION_DECLARE_FORMAL_WAR')
+--WHERE DiplomaticActionType='DIPLOACTION_DECLARE_SURPRISE_WAR';

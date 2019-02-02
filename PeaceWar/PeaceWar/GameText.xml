@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- GameText -->
-<!-- Author: enors -->
+<!-- Author: Doomturtle -->
 <!-- DateCreated: 11/7/2017 6:37:51 PM -->
 <GameData>
 	<LocalizedText>
@@ -9,7 +9,7 @@
 		</Row>
 
 		<Row Tag="LOC_BUILDING_EPN_CITY_DEFENSES_DESCRIPTION" Language="en_US">
-			<Text>Provides protection for the City Center and Encampment district. Provides 50 Hitpoints and allows [ICON_Ranged] Ranged Strikes from the City Center and Encampment district. Must be defeated before a city can be assaulted.</Text>
+			<Text>Provides protection for the City Center and Encampment district. Provides +50 Hitpoints, +10 defense, and allows [ICON_Ranged] Ranged Strikes from the City Center and Encampment district. Must be defeated before a city can be assaulted.</Text>
 		</Row>
 	</LocalizedText>	
 </GameData>

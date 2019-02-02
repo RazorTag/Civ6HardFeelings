@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>AI Difficulty</Name>
+    <Guid>4edbee14-2ab5-4a48-a57d-8f451437626a</Guid>
+    <ProjectGuid>8f8fd4a4-1e41-442f-9f60-c29a5dcb78e5</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Replaces AI starting bonuses with higher yield bonuses</Teaser>
+    <Description>Replaces AI starting bonuses with higher yield bonuses</Description>
+    <Authors>Doomturtle</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>AIDifficulty</AssemblyName>
+    <RootNamespace>AIDifficulty</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>

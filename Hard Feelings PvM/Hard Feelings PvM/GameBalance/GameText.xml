@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- GameText -->
+<!-- Author: Doomturtle -->
+<!-- DateCreated: 11/8/2017 7:15:48 PM -->
+<GameData>
+	<LocalizedText>		
+		
+		<!-- Scythia selection screen -->
+		<!--<Replace Tag="LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION" Language="en_US">
+			<Text>Scythian unique Classical era unit. Ranged unit with 4 [ICON_Movement] Movement with a [ICON_Range] Range of 2.</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION" Language="en_US">
+			<Text>All units receive +5 [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 10 hitpoints.</Text>
+		</Replace>-->
+		
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_NAME" Language="en_US">
+			<Text>Horse God</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="en_US">
+			<Text>Scythia can purchase cavalry units with faith[ICON_Faith].</Text>
+		</Replace>
+
+		<Row Tag="LOC_CIVIC_CRAFTSMANSHIP_DESCRIPTION" Language="en_US">
+			<Text>Farm improvements now gain +1 [ICON_Production] Production for each two adjacent Farm improvements.</Text>
+		</Row>
+		<Row Tag="LOC_CIVIC_HUMANISM_DESCRIPTION" Language="en_US">
+			<Text>Farm improvements now gain +1 [ICON_Production] Production for each adjacent Farm improvement.</Text>
+		</Row>
+		<!--<Replace Tag="LOC_CIVIC_FEUDALISM_DESCRIPTION" Language="en_US">
+			<Text>Farm improvements now gain +1 [ICON_Food] Food for each adjacent Farm improvement.</Text>
+		</Replace>
+		<Replace Tag="LOC_TECH_REPLACEABLE_PARTS_DESCRIPTION" Language="en_US">
+			<Text>Farm improvements now gain +2 [ICON_Food] Food for each adjacent Farm improvement.</Text>
+		</Replace>-->
+		
+	</LocalizedText>
+</GameData>
