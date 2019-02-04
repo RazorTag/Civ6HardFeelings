@@ -9,7 +9,7 @@
 		</Row>
 
 		<Row Tag="LOC_POLICY_DESCRIPTION_EPN_OPIATE_OF_THE_MASSES" Language="en_US">
-			<Text>Provides 1 [ICON_Amenities] Entertainment from each Holy Site or Lavra.</Text>
+			<Text>Provides +1 [ICON_Amenities] Entertainment from each Holy Site or Lavra.</Text>
 		</Row>
 
 		<!-- Civilopedia information about Opiate of the Masses. -->

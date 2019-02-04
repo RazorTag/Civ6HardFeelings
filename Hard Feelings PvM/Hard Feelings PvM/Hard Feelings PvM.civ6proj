@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>Hard Feelings PvM</Name>
+    <Name>Hard Feelings</Name>
     <Guid>88e6df0e-5d43-4c96-a429-382a4dd7258e</Guid>
     <ProjectGuid>93f91220-c4f4-4298-9f80-f97b0260a25b</ProjectGuid>
     <ModVersion>1</ModVersion>
@@ -18,17 +18,22 @@
     <AssemblyName>Hard Feelings PvM</AssemblyName>
     <RootNamespace>Hard Feelings PvM</RootNamespace>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="GameBalanceText"><File>GameBalance/GameText.xml</File></UpdateText><UpdateText id="GameSpeedsText"><File>FasterGameSpeeds/GameText.xml</File></UpdateText><UpdateDatabase id="GameSpeedsData"><File>FasterGameSpeeds/GameInfo.xml</File></UpdateDatabase></FrontEndActions>]]></FrontEndActionData>
-    <InGameActionData><![CDATA[<InGameActions><UpdateText id="GameBalanceText"><File>GameBalance/GameText.xml</File></UpdateText><UpdateDatabase id="GameBalanceData"><File>GameBalance/Buildings.sql</File><File>GameBalance/Civilizations.sql</File><File>GameBalance/GlobalParameters.sql</File><File>GameBalance/Happinesses.sql</File><File>GameBalance/Improvements.sql</File><File>GameBalance/Units.sql</File></UpdateDatabase><UpdateDatabase id="DifficultyData"><File>Difficulty/StartingUnits.sql</File><File>Difficulty/YieldScaling.sql</File></UpdateDatabase><UpdateIcons id="CultureIcons"><File>CulturalAppropriation/Icons.xml</File></UpdateIcons><UpdateText id="CultureText"><File>CulturalAppropriation/Text.xml</File></UpdateText><UpdateDatabase id="CultureData"><File>CulturalAppropriation/GlobalParameters.sql</File><File>CulturalAppropriation/Policies.sql</File></UpdateDatabase><UpdateDatabase id="TurnTimerData"><File>DynamicTurnTimer/TurnTimer.xml</File></UpdateDatabase><UpdateDatabase id="GameSpeedsData"><File>FasterGameSpeeds/GameSpeeds.sql</File><File>FasterGameSpeeds/GameSpeeds_RiseAndFall.sql</File></UpdateDatabase><UpdateDatabase id="Redistricting"><File>Redistricting/Districts.sql</File></UpdateDatabase><UpdateDatabase id="TileBalancingData"><File>TileBalancing/Terrain_YieldChanges.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateText id="GameBalanceText"><File>GameBalance/GameText.xml</File></UpdateText><UpdateDatabase id="GameBalanceData"><Properties><LoadOrder>100</LoadOrder></Properties><File>GameBalance/Buildings.sql</File><File>GameBalance/Civilizations.sql</File><File>GameBalance/GlobalParameters.sql</File><File>GameBalance/Happinesses.sql</File><File>GameBalance/Improvements.sql</File><File>GameBalance/Units.sql</File></UpdateDatabase><UpdateDatabase id="DifficultyData"><File>Difficulty/StartingUnits.sql</File><File>Difficulty/YieldScaling.sql</File></UpdateDatabase><UpdateIcons id="CultureIcons"><File>CulturalAppropriation/Icons.xml</File></UpdateIcons><UpdateText id="CultureText"><File>CulturalAppropriation/Text.xml</File></UpdateText><UpdateDatabase id="CultureData"><File>CulturalAppropriation/GlobalParameters.sql</File><File>CulturalAppropriation/Policies.sql</File></UpdateDatabase><UpdateDatabase id="TurnTimerData"><File>DynamicTurnTimer/TurnTimer.xml</File></UpdateDatabase><UpdateDatabase id="GameSpeedsData"><Properties><LoadOrder>13000</LoadOrder></Properties><File>FasterGameSpeeds/GameSpeeds.sql</File><File>FasterGameSpeeds/GameSpeeds_RiseAndFall.sql</File></UpdateDatabase><UpdateDatabase id="Redistricting"><File>Redistricting/Districts.sql</File></UpdateDatabase><UpdateDatabase id="TileBalancingData"><File>TileBalancing/Terrain_YieldChanges.sql</File></UpdateDatabase><UpdateDatabase id="BarbariansData"><File>MellowBarbarians/GlobalParameters.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
     <AssociationData><![CDATA[<Associations>
-  <Block type="Mod" title="Tile Balancing" id="1492861619" />
-  <Block type="Mod" title="Persistent Difficulty" id="1453194971" />
-  <Block type="Mod" title="Cultural Appropriation" id="1197242372" />
-  <Block type="Mod" title="Redistricting" id="1197235193" />
-  <Block type="Mod" title="Game Balance" id="1196289917" />
-  <Block type="Mod" title="Flatter Dynamic Turn Timer" id="1180364645" />
-  <Block type="Mod" title="Faster Game Speeds" id="1179670768" />
-  <Reference type="Mod" title="8 Ages of Pace" id="1109505115" />
+  <Reference type="Mod" title="Steel and Thunder: Unit Expansion" id="01159f41-7ca0-4181-84cf-2f2c912edfdd" />
+  <Reference type="Mod" title="Steel and Thunder: Unique Units" id="a1fe0ce2-ca98-4998-a0c9-2aa1639eb6d0" />
+  <Reference type="Mod" title="8 Ages of Pace" id="4ca4ada1-5aaa-4663-ba98-ccbc50efcf83" />
+  <Block type="Mod" title="Game Balance" id="4eaf5625-ad37-497f-ac55-2a65a15638b3" />
+  <Block type="Mod" title="Redistricting" id="6e2a26bd-319e-4258-a272-68068acbfb1c" />
+  <Block type="Mod" title="Faster Game Speeds" id="f6534777-c52e-4537-b508-52f66565ffa2" />
+  <Block type="Mod" title="Cultural Appropriation" id="f4d6afe2-4a94-458e-afc7-4bc959ce7437" />
+  <Block type="Mod" title="Tile Balancing" id="66bd76cd-67f0-4b9d-959d-379ee89033e3" />
+  <Block type="Mod" title="Persistent Difficulty" id="4ecbc07e-4ff7-4092-8972-93e471278a59" />
+  <Block type="Mod" title="Flatter Dynamic Turn Timer" id="19913a5c-a91a-4cc8-ae88-991889a667bd" />
 </Associations>]]></AssociationData>
+    <ModProperties>
+      <CustomProperties />
+    </ModProperties>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -42,6 +47,7 @@
     <Folder Include="CulturalAppropriation" />
     <Folder Include="DynamicTurnTimer" />
     <Folder Include="FasterGameSpeeds" />
+    <Folder Include="MellowBarbarians" />
     <Folder Include="TileBalancing" />
     <Folder Include="Redistricting" />
   </ItemGroup>
@@ -65,6 +71,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="DynamicTurnTimer\TurnTimer.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DynamicTurnTimer\TurnTimers.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="FasterGameSpeeds\GameInfo.xml">
@@ -98,6 +107,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="GameBalance\Units.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MellowBarbarians\GlobalParameters.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Redistricting\Districts.sql">

@@ -3,8 +3,20 @@
 <GameInfo>
 	<TurnSegments>
 		<Update>
-			<Set TimeLimit_Base ="50"  TimeLimit_PerCity="7"  TimeLimit_PerUnit="3" />
+			<Set TimeLimit_Base ="30"  TimeLimit_PerCity="5"  TimeLimit_PerUnit="2" />
+			<Where TurnSegmentType="TURNSEG_SINGLEPLAYER" />
+		</Update>
+		<Update>
+			<Set TimeLimit_Base ="30"  TimeLimit_PerCity="5"  TimeLimit_PerUnit="2" />
 			<Where TurnSegmentType="TURNSEG_SINGLEPHASE" />
+		</Update>
+		<Update>
+			<Set TimeLimit_Base ="10"  TimeLimit_PerCity="0"  TimeLimit_PerUnit="2" />
+			<Where TurnSegmentType="TURNSEG_TACTICAL" />
+		</Update>
+		<Update>
+			<Set TimeLimit_Base ="20"  TimeLimit_PerCity="5"  TimeLimit_PerUnit="0" />
+			<Where TurnSegmentType="TURNSEG_STRATEGIC" />
 		</Update>
 	</TurnSegments>
 </GameInfo>

@@ -21,17 +21,17 @@
 		</Replace>
 
 		<Row Tag="LOC_CIVIC_CRAFTSMANSHIP_DESCRIPTION" Language="en_US">
-			<Text>Farm improvements now gain +1 [ICON_Production] Production for each two adjacent Farm improvements.</Text>
+			<Text>Farm improvements now gain +1 [ICON_Food] Food for each two adjacent Farm improvements.</Text>
 		</Row>
-		<Row Tag="LOC_CIVIC_HUMANISM_DESCRIPTION" Language="en_US">
+		<!--<Row Tag="LOC_CIVIC_GUILDS_DESCRIPTION" Language="en_US">
 			<Text>Farm improvements now gain +1 [ICON_Production] Production for each adjacent Farm improvement.</Text>
-		</Row>
-		<!--<Replace Tag="LOC_CIVIC_FEUDALISM_DESCRIPTION" Language="en_US">
+		</Row>-->
+		<Replace Tag="LOC_CIVIC_FEUDALISM_DESCRIPTION" Language="en_US">
 			<Text>Farm improvements now gain +1 [ICON_Food] Food for each adjacent Farm improvement.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_REPLACEABLE_PARTS_DESCRIPTION" Language="en_US">
 			<Text>Farm improvements now gain +2 [ICON_Food] Food for each adjacent Farm improvement.</Text>
-		</Replace>-->
+		</Replace>
 		
 	</LocalizedText>
 </GameData>
