@@ -7,8 +7,8 @@ UPDATE GlobalParameters SET Value = '100' WHERE Name = 'BARBARIAN_TECH_PERCENT';
 --Max barb camps per Major Civilization, default value of 3
 UPDATE GlobalParameters SET Value = '2' WHERE Name = 'BARBARIAN_CAMP_MAX_PER_MAJOR_CIV';
 
---Min spawn distance from cities, default value of 4
-UPDATE GlobalParameters SET Value = '6' WHERE Name = 'BARBARIAN_CAMP_MINIMUM_DISTANCE_CITY';
+----Min spawn distance from cities, default value of 4
+--UPDATE GlobalParameters SET Value = '6' WHERE Name = 'BARBARIAN_CAMP_MINIMUM_DISTANCE_CITY';
 	
 --Space Between Barbarian Camps, default value of 7
 --UPDATE GlobalParameters SET Value = '4' WHERE Name = 'BARBARIAN_CAMP_MINIMUM_DISTANCE_ANOTHER_CAMP';
