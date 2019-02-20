@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chinese Simplified -->
+<!-- Author: Flactine -->
+<!-- DateCreated: 2/20/2019 12:17:50 AM -->
+<GameData>
+	<LocalizedText>
+		<!-- faster game speeds -->
+		<Replace Tag="LOC_GAMESPEED_FAST_NAME" Language="zh_Hans_CN">
+			<Text>速战速决</Text>
+		</Replace>
+		<Replace Tag="LOC_GAMESPEED_FAST_HELP" Language="zh_Hans_CN">
+			<Text>比联机速度还快25%(标准速度的2.5倍)。</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GAMESPEED_CASUAL_NAME" Language="zh_Hans_CN">
+			<Text>倍道而进</Text>
+		</Replace>
+		<Replace Tag="LOC_GAMESPEED_CASUAL_HELP" Language="zh_Hans_CN">
+			<Text>非常快的游戏速度(标准速度的3.33倍)。</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GAMESPEED_BLAZING_NAME" Language="zh_Hans_CN">
+			<Text>风驰云走</Text>
+		</Replace>
+		<Replace Tag="LOC_GAMESPEED_BLAZING_HELP" Language="zh_Hans_CN">
+			<Text>迅雷不及掩耳的游戏速度(标准速度的5倍)。</Text>
+		</Replace>
+
+		<Replace Tag="LOC_GAMESPEED_ADHD_NAME" Language="zh_Hans_CN">
+			<Text>击电奔星</Text>
+		</Replace>
+		<Replace Tag="LOC_GAMESPEED_ADHD_HELP" Language="zh_Hans_CN">
+			<Text>文明6能支持的最快的游戏速度(标准速度的10倍)。</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
