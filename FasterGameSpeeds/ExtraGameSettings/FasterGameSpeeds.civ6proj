@@ -17,7 +17,7 @@
     <SupportsHotSeat>true</SupportsHotSeat>
     <AssemblyName>ExtraGameSettings</AssemblyName>
     <RootNamespace>ExtraGameSettings</RootNamespace>
-    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Options"><File>GameInfo.xml</File></UpdateDatabase><UpdateText id="Text"><File>GameText.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Options"><File>GameInfo.xml</File></UpdateDatabase><UpdateText id="Text"><File>GameText.xml</File><File>Translations/Chinese.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
     <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="GameData"><Properties><LoadOrder>100000</LoadOrder></Properties><File>GameSpeeds.sql</File><File>Durations.sql</File></UpdateDatabase></InGameActions>]]></InGameActionData>
     <AssociationData><![CDATA[<Associations>
   <Block type="Mod" title="8 Ages Of Pace" id="4ca4ada1-5aaa-4663-ba98-ccbc50efcf83" />
@@ -33,12 +33,21 @@
     <Content Include="Durations.sql">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="GameText.xml">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="GameInfo.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="GameText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Translations\Chinese.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Translations\ChineseTraditional.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Translations" />
   </ItemGroup>
   <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
 </Project>
