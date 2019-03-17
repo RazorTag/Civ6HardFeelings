@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Chinese Traditional -->
-<!-- Author: <translator> -->
+<!-- Author: Yang -->
 <!-- DateCreated: 2/19/2019 10:24:24 AM -->
 <GameData>
 	<LocalizedText>
 		<!-- faster game speeds -->
 		<Replace Tag="LOC_GAMESPEED_FAST_NAME" Language="zh_Hant_HK">
-			<Text>Fast</Text>
+			<Text>速戰速決</Text>
 		</Replace>
 		<Replace Tag="LOC_GAMESPEED_FAST_HELP" Language="zh_Hant_HK">
-			<Text>25% faster than normal online speed (2.5x normal speed).</Text>
+			<Text>比聯機速度快25%(標準速度的2.5倍)。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GAMESPEED_CASUAL_NAME" Language="zh_Hant_HK">
-			<Text>Casual</Text>
+			<Text>倍道而進</Text>
 		</Replace>
 		<Replace Tag="LOC_GAMESPEED_CASUAL_HELP" Language="zh_Hant_HK">
-			<Text>Very fast game (3.33x normal speed).</Text>
+			<Text>非常快的遊戲速度(標準速度的3.33倍)。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GAMESPEED_BLAZING_NAME" Language="zh_Hant_HK">
-			<Text>Blazing</Text>
+			<Text>風馳雲走</Text>
 		</Replace>
 		<Replace Tag="LOC_GAMESPEED_BLAZING_HELP" Language="zh_Hant_HK">
-			<Text>Blazing fast game (5x normal speed).</Text>
+			<Text>迅雷不及掩耳的遊戲速度(標準速度的5倍)。</Text>
 		</Replace>
 
 		<Replace Tag="LOC_GAMESPEED_ADHD_NAME" Language="zh_Hant_HK">
-			<Text>ADHD</Text>
+			<Text>擊電奔星</Text>
 		</Replace>
 		<Replace Tag="LOC_GAMESPEED_ADHD_HELP" Language="zh_Hant_HK">
-			<Text>The fastest speed that Civ VI supports (10x normal speed).</Text>
+			<Text>文明6能支持的最快的遊戲速度(標準速度的10倍)。</Text>
 		</Replace>
 	</LocalizedText>
 </GameData>
