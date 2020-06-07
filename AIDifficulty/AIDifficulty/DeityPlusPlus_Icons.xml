@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GameInfo>
-	<IconDefinitions>
-		<!-- Use Deity icon for now, maybe add custom icons later when the SDK gets released. -->
-		<Row Name="ICON_DIFFICULTY_DEITY_PLUS" Atlas="ICON_ATLAS_GAME_DIFFICULTY" Index="7"/>
-		<Row Name="ICON_DIFFICULTY_DEITY_PLUSPLUS" Atlas="ICON_ATLAS_GAME_DIFFICULTY" Index="7"/>
-	</IconDefinitions>
-</GameInfo>
