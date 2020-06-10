@@ -7,7 +7,7 @@
     <ProjectGuid>a5997927-1f16-4bfb-aba9-7c4f4b7e725f</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>Changes the bonuses that AI players receive</Teaser>
-    <Description>Removes the extra starting units that AI civs receive on hard difficulties. High difficulty AI civs only receive bonus yields to production, food, and gold (+25% per difficulty level up to +100% at deity). Removes bonuses to combat strength and combat xp for both AIs and players. Low difficulty human civs receive a bonus production yield (+10% per difficulty level up to +30% at settler). High difficulty human civs receive a nerf to production (-10% per difficulty level down to -40% at deity).</Description>
+    <Description>Removes the extra starting units that AI civs receive on hard difficulties. High difficulty AI civs only receive bonus yields to production, food, and gold (+25% per difficulty level up to +100% at deity). Removes bonuses to combat strength and combat xp for both AIs and players. Low difficulty human civs receive a bonus production yield (+15% per difficulty level up to +45% at settler). High difficulty human civs receive a nerf to production (-15% per difficulty level down to -60% at deity).</Description>
     <Authors>Doomturtle</Authors>
     <SpecialThanks>
     </SpecialThanks>

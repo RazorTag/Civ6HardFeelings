@@ -74,7 +74,7 @@ UPDATE ModifierArguments SET Extra=0 WHERE Name='Amount' AND
 	);
 
 -- Modify player difficulty scaling for gold, production, and food.
-UPDATE ModifierArguments SET Extra=-10 WHERE Name='Amount' AND
+UPDATE ModifierArguments SET Extra=-15 WHERE Name='Amount' AND
 	(
 		--ModifierId='LOW_DIFFICULTY_GOLD_SCALING' OR
 		ModifierId='LOW_DIFFICULTY_PRODUCTION_SCALING'-- OR
